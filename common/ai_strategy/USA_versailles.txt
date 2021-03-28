@@ -1,0 +1,69 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+USA_stay_in_faction = {
+	enable = {
+		tag = USA
+		OR = {
+			AND = {
+				is_in_faction_with = FRA
+			}
+			AND = {
+				if = {
+					limit = {
+							ENG = {
+								has_country_flag = NEW_COALITION_FLAG
+							}
+						}
+						is_in_faction_with = ENG
+				}
+				if = {
+					limit = {
+							PRS = {
+								has_country_flag = NEW_COALITION_FLAG
+							}
+						}
+						is_in_faction_with = PRS
+				}
+				if = {
+					limit = {
+							ITA = {
+								has_country_flag = NEW_COALITION_FLAG
+							}
+						}
+						is_in_faction_with = ITA
+				}
+				if = {
+					limit = {
+							SOV = {
+								has_country_flag = NEW_COALITION_FLAG
+							}
+						}
+						is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	abort = {
+		is_in_faction = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"			
+		value = 1000
+	}
+}

@@ -1,0 +1,31 @@
+spriteTypes = {
+    
+	SpriteType = {
+	    name = "GFX_FRA_the_great_campaign"
+		texturefile = "gfx/interface/goals/FRA_the_great_campaign.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_vive_empire_france"
+		texturefile = "gfx/interface/goals/FRA_vive_empire_france.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_expand_carlingue"
+		texturefile = "gfx/interface/goals/FRA_expand_carlingue.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_Invest_In_Nouvelle_Hollande"
+		texturefile = "gfx/interface/goals/FRA_Invest_In_Nouvelle_Hollande.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_Send_Over_Arms"
+		texturefile = "gfx/interface/goals/FRA_Send_Over_Arms.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_Support_The_Irish"
+		texturefile = "gfx/interface/goals/FRA_Support_The_Irish.dds"
+	}
+	SpriteType = {
+	    name = "GFX_FRA_influence_thailand"
+		texturefile = "gfx/interface/goals/FRA_influence_thailand.dds"
+	}
+}

@@ -1,0 +1,521 @@
+﻿##############################################################
+# German Empire in Exile Events - Gates to Versailles Edition#
+##############################################################
+add_namespace = germanexile
+country_event = {
+	#Death of the Kaiser
+	id = germanexile.1
+	title = germanexile.1.t
+	desc = germanexile.1.d
+	picture = report_event_RUScivilwar_invasion_pics
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = germanexile.1.a		#Death
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Wilhelm III"
+			desc = "POLITICS_WILHELM_III_DESC"
+			picture = "Musvak_Wilhelm_III.dds"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = {
+	#British company wants extraction rights
+	id = germanexile.2
+	title = germanexile.2.t
+	desc = germanexile.2.d
+	picture = GFX_report_event_generic_oil_fields
+	is_triggered_only = yes
+	option = {
+		#Accept deal
+		name = germanexile.2.a
+		custom_effect_tooltip = increased_native_unrest_tt
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = excavation_tech
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Decline deal
+		name = germanexile.2.b
+		add_political_power = -25
+		hidden_effect = {
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#African Mission
+	id = germanexile.3
+	title = germanexile.3.t
+	desc = germanexile.3.d
+	picture = GFX_report_event_african_mission
+	is_triggered_only = yes
+	option = {
+		#Allow the missionaries to work
+		name = germanexile.3.a
+		custom_effect_tooltip = increased_native_unrest_tt
+		add_political_power = 100
+		random_owned_controlled_state = {
+			add_manpower = 25000
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Don't allow the missionaries to work
+		name = germanexile.3.b
+		add_stability = -0.1
+		hidden_effect = {
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Ovambo shooting
+	id = germanexile.4
+	title = germanexile.4.t
+	desc = germanexile.4.d
+	picture = GFX_report_event_ovambo_people
+	is_triggered_only = yes
+	option = {
+		#No reprimands
+		name = germanexile.4.a
+		custom_effect_tooltip = increased_native_unrest_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Reprimand the officers
+		name = germanexile.4.b
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_political_power = -150
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Native soldiers desert
+	id = germanexile.5
+	title = germanexile.5.t
+	desc = germanexile.5.d
+	picture = GFX_report_event_desertion_poster
+	is_triggered_only = yes
+	option = {
+		#Reign in the deserters
+		name = germanexile.5.a
+		custom_effect_tooltip = increased_native_unrest_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Do nothing
+		name = germanexile.5.b
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_manpower = -10000
+		hidden_effect = {
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Death of a tribal figure
+	id = germanexile.6
+	title = germanexile.6.t
+	desc = germanexile.6.d
+	picture = GFX_report_event_generic_funeral
+	is_triggered_only = yes
+	option = {
+		#Honour his death
+		name = germanexile.6.a
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_stability = -0.15
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Do nothing
+		name = germanexile.6.b
+		hidden_effect = {
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Natives want land back
+	id = germanexile.7
+	title = germanexile.7.t
+	desc = germanexile.7.d
+	picture = GFX_report_event_tanks_vietnam
+	is_triggered_only = yes
+	option = {
+		#Pay reparations for the lands
+		name = germanexile.7.a
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_timed_idea = {
+			idea = GEX_native_reparations
+			days = 180
+		}
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Deny land back
+		name = germanexile.7.b
+		custom_effect_tooltip = increased_native_unrest_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Good diplomatic bargaining
+	id = germanexile.8
+	title = germanexile.8.t
+	desc = germanexile.8.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		#Good things
+		name = germanexile.8.a
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_political_power = 50
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Diplomatic faux pas
+	id = germanexile.9
+	title = germanexile.9.t
+	desc = germanexile.9.d
+	picture = GFX_report_event_defensive_preparations
+	is_triggered_only = yes
+	option = {
+		#Bad things
+		name = germanexile.9.a
+		custom_effect_tooltip = increased_native_unrest_tt
+		add_political_power = -50
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Factory strikes
+	id = germanexile.10
+	title = germanexile.10.t
+	desc = germanexile.10.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		#Accept limited strikes
+		name = germanexile.10.a
+		custom_effect_tooltip = decreased_native_unrest_tt
+		add_timed_idea = {
+			idea = GEX_native_strikes
+			days = 200
+		}
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Shoot them
+		name = germanexile.10.b
+		custom_effect_tooltip = increased_native_unrest_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Natives used as target practice
+	id = germanexile.11
+	title = germanexile.11.t
+	desc = germanexile.11.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = {
+		#Turn a blind eye
+		name = germanexile.11.a
+		army_experience = 15
+		add_tech_bonus = {
+			category = land_doctrine
+			bonus = 1
+			uses = 1
+		}
+		custom_effect_tooltip = increased_native_unrest_tt
+		hidden_effect = {
+			add_to_variable = {
+				var = GEX_native_status
+				value = 1
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+			initiate_native_conflict = yes
+		}
+	}
+	option = {
+		#Shut it down
+		name = germanexile.11.b
+		army_experience = -30
+		hidden_effect = {
+			initiate_native_conflict = yes
+		}
+	}
+}
+
+country_event = {
+	#Native Revolution
+	id = germanexile.12
+	title = germanexile.12.t
+	desc = germanexile.12.d
+	picture = GFX_report_event_namibian_revolution
+	is_triggered_only = yes
+	option = {
+		#Civil war begins
+		name = germanexile.12.a
+		custom_effect_tooltip = GEX_revolution_tt
+		hidden_effect = {
+			NMB = {
+				transfer_state = 927
+				load_oob = "NMB_independence_militia"
+				set_variable = {
+					var = NMB_native_fight_factor
+					value = GEX.GEX_native_status
+				}
+				divide_variable = {
+					var = NMB_native_fight_factor
+					value = 10
+				}
+				add_dynamic_modifier = {
+					modifier = NMB_anti_colonialism
+				}
+				set_cosmetic_tag = NMB_revolt
+				inherit_technology = GEX
+				create_corps_commander = {
+					name = "Samuel Maharero"
+					picture = "NMB_Samuel_Maharero.dds"
+					traits = { war_hero trickster }
+					skill = 3
+					id = 12000
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				add_manpower = 10000
+			}
+			declare_war_on = {
+				target = NMB
+				type = annex_everything
+			}
+		}
+	}
+
+	option = {
+		#Civil war begins
+		name = germanexile.12.b
+		NMB = { change_tag_from = ROOT }
+		custom_effect_tooltip = GEX_unfinished_content_tt
+		hidden_effect = {
+			NMB = {
+				transfer_state = 927
+				load_oob = "NMB_independence_militia"
+				set_variable = {
+					var = NMB_native_fight_factor
+					value = GEX.GEX_native_status
+				}
+				divide_variable = {
+					var = NMB_native_fight_factor
+					value = 10
+				}
+				add_dynamic_modifier = {
+					modifier = NMB_anti_colonialism
+				}
+				set_cosmetic_tag = NMB_revolt
+				inherit_technology = GEX
+				create_corps_commander = {
+					name = "Samuel Maharero"
+					picture = "NMB_Samuel_Maharero.dds"
+					traits = { war_hero trickster }
+					skill = 3
+					id = 12000
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}
+				add_manpower = 10000
+			}
+			declare_war_on = {
+				target = NMB
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	#Victory in the Namibian Revolution
+	id = germanexile.13
+	title = germanexile.13.t
+	desc = germanexile.13.d
+	picture = GFX_report_event_namibian_revolution
+	is_triggered_only = yes
+	option = {
+		#Perfect
+		name = germanexile.13.a
+		custom_effect_tooltip = decreased_native_unrest_big_tt
+		hidden_effect = {
+			subtract_from_variable = {
+				var = GEX_native_status
+				value = 3
+			}
+			clamp_variable = {
+				var = GEX_native_status
+				min = 1
+				max = 10
+			}
+		}
+	}
+}

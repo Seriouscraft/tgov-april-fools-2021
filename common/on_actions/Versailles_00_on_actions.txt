@@ -1,0 +1,149 @@
+on_actions = {
+on_startup = {
+    effect = {
+        every_country = {
+            IF = {
+                limit = {
+                    exists = yes
+                    is_ai = no
+                }
+                country_event = { hours = 1 id = intro.1 }
+            }
+        }
+        random_country = {
+                limit = {
+                    exists = yes
+                }
+			}
+       }
+	   effect = {
+		FRA = {
+			set_variable = {
+			var = drift_toward_absolutism
+			value = 0
+				}
+			}
+		FRA = {
+			set_variable = {
+			var = drift_toward_parliamentary
+			value = 25
+				}
+			}
+	   }
+        effect = {
+        PRS = {
+            country_event = { id = prussia.1 days = 75 }
+        }
+    }
+        effect = {
+        RAJ = {
+            country_event = { id = britishraj.1 days = 108 }
+        }
+    }
+        effect = {
+        LIC = {
+            country_event = { id = lichtenstein.1 days = 937 }
+        }
+    }
+        effect = {
+            GEX = {
+                country_event = { id = germanexile.1 days = 1982 random = 2160 }
+            }
+        }
+        effect = {
+            NSW = {
+                country_event = { id = AprilFools.1 days = 1 }
+            }
+        }
+        #International Aviation Exhibition
+        effect = {
+            SWE = {
+                news_event = { days = 154 id = FlavourNews.7 }
+            }
+        }
+        #Olympics
+        #effect = {
+         #   FRA = {
+          #      news_event = { days = 213 id = FlavourNews.6 }
+           # }
+        #}
+        #Olympics
+     #   effect = {
+     #       AFG = {
+     #           country_event = { id = Olympics1.1 days = 229 }
+     #       }
+      #  }
+        #effect = {
+            #POY = {
+      #          country_event = { id = Olympics1.2 days = 229 }
+            #}
+        #}
+     #   effect = {
+      #      MEX = {
+     #   #        country_event = { id = Olympics1.3 days = 229 }
+     #       }
+     #   }
+      #  effect = {
+     #       BRA = {
+     #           country_event = { id = Olympics1.4 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       NSW = {
+     #          country_event = { id = Olympics1.5 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       SWI = {
+     #           country_event = { id = Olympics1.6 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       QUE = {
+     #           country_event = { id = Olympics1.7 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       SWE = {
+     #           country_event = { id = Olympics1.8 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       HAN = {
+     #           country_event = { id = Olympics1.9 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       BAD = {
+     #           country_event = { id = Olympics1.10 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+     #       MEK = {
+     #           country_event = { id = Olympics1.11 days = 229 }
+     #       }
+     #   }
+     #   effect = {
+    #        BAV = {
+    #            country_event = { id = Olympics1.12 days = 229 }
+    #        }
+    #    }
+	}
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    any_country = {
+                        exists = no
+                        has_country_flag = statistics_1
+                    }
+                }
+                random_country = {
+                    limit = {
+                        exists = yes
+                    }
+                }
+            }
+        }
+    }
+}

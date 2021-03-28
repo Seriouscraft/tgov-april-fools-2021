@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_generic_oil_fields"
+		texturefile = "gfx/event_pictures/report_event_generic_oil_fields.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_african_mission"
+		texturefile = "gfx/event_pictures/report_event_african_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ovambo_people"
+		texturefile = "gfx/event_pictures/report_event_ovambo_people.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_namibian_revolution"
+		texturefile = "gfx/event_pictures/report_event_namibian_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_invasion_of_yucatan_felicista"
+		texturefile = "gfx/event_pictures/news_event_invasion_of_yucatan_felicista.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_invasion_of_yucatan_federal"
+		texturefile = "gfx/event_pictures/news_event_invasion_of_yucatan_federal.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_us_invasion_of_nacionalistas"
+		texturefile = "gfx/event_pictures/news_event_us_invasion_of_nacionalistas.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_us_invasion_of_zapatista"
+		texturefile = "gfx/event_pictures/news_event_us_invasion_of_zapatista.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_fall_of_berlin"
+		texturefile = "gfx/event_pictures/news_event_fall_of_berlin.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_1936_olympics"
+		texturefile = "gfx/event_pictures/news_event_1936_olympics.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_international_aviation_exhibition"
+		texturefile = "gfx/event_pictures/news_event_international_aviation_exhibition.dds"
+	}
+}
+	
+	
+	

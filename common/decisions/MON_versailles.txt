@@ -1,0 +1,523 @@
+MON_influence_tana_tuva = {
+     MON_foster_steppe_nationalism = {
+          allowed = {
+               original_tag = MON
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = MON_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+          cost = 50
+
+          days_remove = 70
+
+          modifier = {
+               political_power_factor = -0.1
+               war_support_weekly = -0.01
+          }
+
+          targeted_modifier = {
+               tag = TAN
+               political_power_factor = 0.1
+               war_support_weekly = 0.01
+          }
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_15
+               add_to_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 15
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     MON_found_the_communist_university_of_the_toilers_of_the_east = {
+          allowed = {
+               original_tag = MON
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = MON_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+          cost = 100
+
+          days_remove = 100
+
+          fire_only_once = yes
+
+          modifier = {
+               political_power_factor = -0.1
+               stability_factor = -0.05
+               research_speed_factor = -0.1
+          }
+
+          remove_effect = {
+               TAN = {
+                    add_research_slot = 1
+               }
+               custom_effect_tooltip = SOV_tanna_influence_25
+               add_to_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 25
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     MON_increse_buddhist_ties = {
+          allowed = {
+               original_tag = MON
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = MON_tannu_tuva_influence_var
+                         value = 10
+                         compare = equals
+                    }
+               }
+          }
+
+          cost = 50
+
+          days_remove = 70
+
+          modifier = {
+               theocracy_drift = 0.05
+               political_power_factor = -0.1
+          }
+
+          targeted_modifier = {
+               tag = TAN
+               theocracy_drift = 0.1
+               war_support_weekly = 0.02
+          }
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_10
+               add_to_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 10
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     MON_denounce_russian_imperialism = {
+          allowed = {
+               original_tag = MON
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = MON_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+          cost = 25
+
+          days_re_enable = 30
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_5
+               add_to_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 5
+               }
+               TAN = {
+                    add_opinion_modifier = {
+                    target = SOV
+                    modifier = TAN_denounced_imperialism
+                    }
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     MON_expand_tuvinbank = {
+          allowed = {
+               original_tag = MON
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = MON_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+          cost = 50
+
+          days_remove = 60
+
+          modifier = {
+               global_building_slots_factor = -0.1
+               production_speed_buildings_factor = -0.1
+          }
+
+          targeted_modifier = {
+               tag = TAN
+               global_building_slots_factor = 0.1
+               production_speed_buildings_factor = 0.1
+          }
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_10
+               add_to_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 10
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     MON_annex_tannu_tuva = {
+          allowed = {
+               original_tag = MON
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               check_variable = {
+                    var = MON_tannu_tuva_influence_var
+                    value = 100
+                    compare = equals
+               }
+          }
+
+          cost = 10
+
+          fire_only_once = yes
+
+          complete_effect = {
+               annex_country = {
+                    target = TAN
+                    transfer_troops = no
+               }
+          }
+          ai_will_do = {
+			factor = 100
+		}
+     }
+}
+
+SOV_influence_tana_tuva = {
+     SOV_expand_trans_siberian_railway = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = SOV_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+
+          days_re_enable = 60
+
+          cost = 50
+
+          fire_only_once = yes
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_20
+               add_to_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 20
+               }
+               329 = {
+                    add_building_construction = {
+                         type = infrastructure
+                         level = 1
+                         instant_build = yes
+                    }
+               }
+               if = {
+                      limit = {
+                            has_completed_focus = SOV_siberian_infrastructure_programs
+                     }
+                     329 = {
+                    add_building_construction = {
+                         type = infrastructure
+                         level = 1
+                         instant_build = yes
+                         }
+                    }
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     SOV_send_russian_economic_experts = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = SOV_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+
+          days_remove = 60
+
+          cost = 50
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_10
+               add_to_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 10
+               }
+          }
+
+          modifier  = {
+               production_factory_efficiency_gain_factor = -0.05
+               industrial_capacity_factory = -0.05
+          }
+          targeted_modifier = {
+               tag = TAN
+               production_factory_efficiency_gain_factor = 0.05
+               industrial_capacity_factory = 0.05
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     SOV_send_military_supplies = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+               has_equipment = {
+                    infantry_equipment_1 > 750
+               }
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = SOV_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+
+          days_re_enable = 50
+
+          cost = 50
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_10
+               add_to_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 10
+               }
+               send_equipment = {
+                    equipment = infantry_equipment_1
+                    amount = 750
+                    target = TAN
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     SOV_invest_in_tuva = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = SOV_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+
+          days_remove = 60
+
+          cost = 75
+
+          modifier = {
+               consumer_goods_factor = 0.05
+               stability_factor = -0.05
+          }
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_15
+               add_to_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 15
+               }
+               TAN = {
+                    add_offsite_building = { type = industrial_complex level = 1 }
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     SOV_send_russian_military_experts = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               NOT = {
+                    check_variable = {
+                         var = SOV_tannu_tuva_influence_var
+                         value = 100
+                         compare = equals
+                    }
+               }
+          }
+
+          days_remove = 60
+
+          cost = 75
+
+          modifier = {
+               experience_gain_army_factor = -0.1
+               training_time_factor = 0.1
+          }
+
+          targeted_modifier = {
+               tag = TAN
+               experience_gain_army_factor = 0.1
+               training_time_factor = -0.1
+          }
+
+          remove_effect = {
+               custom_effect_tooltip = SOV_tanna_influence_10
+               add_to_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 10
+               }
+          }
+
+          ai_will_do = {
+			factor = 100
+		}
+     }
+
+     SOV_annex_tannu_tuva = {
+          allowed = {
+               original_tag = SOV
+          }
+
+          available = {
+               is_neighbor_of = TAN
+          }
+
+          visible = {
+               check_variable = {
+                    var = SOV_tannu_tuva_influence_var
+                    value = 100
+                    compare = equals
+               }
+          }
+
+          cost = 10
+
+          fire_only_once = yes
+
+          complete_effect = {
+               annex_country = {
+                    target = TAN
+                    transfer_troops = no
+               }
+               TAN = {
+                    remove_state_core = 329
+               }
+          }
+          ai_will_do = {
+			factor = 100
+		}
+     }
+}
+

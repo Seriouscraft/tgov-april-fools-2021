@@ -1,0 +1,31 @@
+##################################################
+# HAPPY APRIL FOOLS 2021 TO ANYONE WHO READ THIS #
+##################################################
+
+add_namespace = AprilFools
+
+country_event = { #War of Da Bushes
+	id = AprilFools.1
+	title = AprilFools.1.t
+	desc = AprilFools.1.d
+	#picture = GFX_event_picture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = NSW
+		date > 1936.1.1
+		date < 1936.2.1
+	}
+
+	option = {
+		name = AprilFools.1.a #Guess i'll go to war then ¯\_(ツ)_/¯
+		NSW = {
+			declare_war_on = { 
+			type = annex_everything 
+			target = NHO
+			}
+		}
+	}
+}

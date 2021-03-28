@@ -1,0 +1,2101 @@
+GER_occupation_decisions = {
+	PRS_occupation_of_italy = {
+		available = {
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               ITA = {
+				exists = no
+			}
+			2 = {
+				is_owned_by = PRS
+			}
+        }
+     	visible = {
+               ITA = {
+				exists = no
+			}
+			2 = {
+				is_owned_by = PRS
+			}
+        }
+
+		cost = 25
+
+		fire_only_once = yes
+
+		complete_effect = {
+			release_puppet = ITA
+
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	GER_occupy_venedig_and_lombardei = {
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               ITA = {
+				exists = no
+			}
+			2 = {
+				is_owned_by = PRS
+			}
+			159 = {
+				is_owned_by = PRS
+			}
+			160 = {
+				is_owned_by = PRS
+			}
+        }
+     	visible = {
+               ITA = {
+				exists = no
+			}
+			2 = {
+				is_owned_by = PRS
+			}
+			159 = {
+				is_owned_by = PRS
+			}
+			160 = {
+				is_owned_by = PRS
+			}
+        }
+
+		cost = 25
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_state_core = 159
+			add_state_core = 160
+			set_province_name = { id = 11584 name = "Venedig"}
+			set_province_name = { id = 3780 name = "Mailand"}
+			159 = {
+				set_state_name = "Lombardei"
+			}
+			160 = {
+				set_state_name = "Venedig"
+			}
+			hidden_effect = {
+				ITA = {
+					remove_state_core = 159
+					remove_state_core = 160
+					remove_state_core = 39
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	GER_occupation_of_france = {
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               FRA = {
+				exists = no
+			}
+			16 = {
+				is_owned_by = PRS
+			}
+        }
+     	visible = {
+               FRA = {
+				exists = no
+			}
+			16 = {
+				is_owned_by = PRS
+			}
+        }
+
+		cost = 25
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_state_core = 42
+			add_state_core = 848
+			add_state_core = 28
+			add_state_core = 910
+			add_state_core = 51
+			add_state_core = 851
+
+			set_province_name = { id = 9503 name = "Strassburg"}
+			set_province_name = { id = 11516 name = "Nanzig"}
+			set_province_name = { id = 678 name = "Mülhausen im Elsass"}
+
+			28 = {
+				set_state_name = "Elsass-Lothringen"
+			}
+			910 = {
+				set_state_name = "Nanzig"
+			}
+
+			FRA = {
+				remove_state_core = 42
+				remove_state_core = 848
+				remove_state_core = 28
+				remove_state_core = 910
+				remove_state_core = 51
+				remove_state_core = 851
+			}
+
+			release_puppet = FRA
+
+			hidden_effect = {
+			FRA = {
+				set_politics = {
+				ruling_party = neutrality
+				election_frequency = 50
+				elections_allowed = no
+			}
+				create_country_leader = {
+					name = "Dietrich von Choltitz"
+					desc = "POLITICS_DIETRICH_VON_CHOLITZ_DESC"
+					picture = "GER_Dietrich_von_Cholitz.dds"
+					expire = "1965.1.1"
+					ideology = military_junta
+					traits = {
+						}
+					}
+					set_cosmetic_tag = FRA_GER_Occupied_France
+					set_party_name = { 
+						ideology = neutrality 
+						long_name = FRA_GER_Occupied_France_neutrality_party_long 
+						name = FRA_GER_Occupied_France_neutrality_party 
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+GER_unification_decisions = {
+	PRS_meck_referendum = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               MEK = {
+				exists = yes
+				}
+				PRS = {
+				has_completed_focus = GER_dealing_with_mecklenburg
+				has_war = no
+				}
+		check_variable = {
+			var = reichstag_support
+			value = 30
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 50
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			MEK = { 
+				country_event = { id = prussia.2 days = 1 } 
+			}
+			add_political_power = 25
+			subtract_from_variable = {
+				var = reichstag_support 
+				value = 5
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	PRS_begin_integration_meck = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               MEK = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = meck_referendum
+				has_war = no
+				}
+			check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 60
+
+		cost = 60
+
+		fire_only_once = yes
+	
+
+		remove_effect = {
+			add_threat = 1
+			annex_country = {
+    			target = MEK
+    			transfer_troops = yes
+			}
+			MEK = {
+				every_unit_leader = {
+					set_nationality = PRS
+				}
+			}
+			61 = {
+				remove_core_of = MEK
+				add_core_of = PRS
+			}
+			
+			61 = {
+			add_core_of = PRS
+			}
+			add_political_power = 25
+			news_event = {
+    					id = news.368
+    					days = 1
+					}
+			custom_effect_tooltip = PRS_reichstag_req2
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 5
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_saxony = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               SAX = {
+				exists = yes
+				}
+				PRS = {
+				has_war = no
+				has_completed_focus = GER_win_over_saxony
+				}
+			check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 40
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = saxony1
+			SAX = { add_stability = 0.05 }
+			add_political_power = 50
+			custom_effect_tooltip = PRS_reichstag_req2
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 5
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_sympathizers = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               SAX = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = saxony1
+				has_war = no
+				}
+			check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 40
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+		set_country_flag = saxony2
+			SAX = {
+				add_popularity = { 
+					ideology = democratic
+					popularity = 0.2
+				}
+			}
+			add_political_power = 50
+			custom_effect_tooltip = PRS_reichstag_req2
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 5
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_promise_land = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               SAX = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = saxony2
+				has_war = no
+				}
+				check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 15
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+		set_country_flag = saxony3
+			SAX = {
+				country_event = prussia.3
+			}
+			add_political_power = 50
+			custom_effect_tooltip = PRS_reichstag_req2
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 5
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_begin_unification = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               SAX = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = saxony3
+				has_war = no
+				}
+			check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 55
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+		
+			add_threat = 1
+			annex_country = {
+    			target = SAX
+    			transfer_troops = yes
+			}
+			add_state_core = 65
+			add_state_core = 60
+			SAX = {
+				remove_state_core = 60
+				add_state_core = 814
+				every_unit_leader = {
+					set_nationality = PRS
+				}
+			}
+			news_event = {
+    					id = news.364
+    					days = 1
+					}
+		custom_effect_tooltip = PRS_reichstag_req
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 5
+		}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_hannover = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               HAN = {
+				exists = yes
+				}
+				PRS = {
+				has_war = no
+				has_completed_focus = GER_the_issue_of_hannover
+				}
+				check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 30
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 50
+			set_country_flag = hannover1
+			HAN = {
+				add_popularity = { 
+					ideology = communism
+					popularity = 0.15
+				}
+				add_popularity = { 
+					ideology = fascism
+					popularity = 0.15
+				}
+			}
+		custom_effect_tooltip = PRS_reichstag_req2
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 5
+		}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_compromise = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               HAN = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = hannover1
+				has_war = no
+				}
+		check_variable = {
+			var = reichstag_support
+			value = 40
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 50
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 50
+			set_country_flag = hannover2
+			add_opinion_modifier = {
+				target = HAN
+				modifier = found_a_compromise
+				}
+		custom_effect_tooltip = PRS_reichstag_req2
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 5
+		}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_integration = {
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               HAN = {
+				exists = yes
+				}
+				PRS = {
+				has_country_flag = hannover2
+				has_war = no
+				}
+			check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+			}
+        }
+		
+		visible = {
+		has_war = no 
+		}
+		days_remove = 90
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_political_power = 50
+			add_threat = 1
+			annex_country = {
+    			target = HAN
+    			transfer_troops = yes
+			}
+			add_state_core = 59
+			add_state_core = 866
+			HAN = {
+			every_unit_leader = {
+				set_nationality = PRS
+				}
+			}
+			news_event = {
+    					id = news.365
+    					days = 1
+					}
+		custom_effect_tooltip = PRS_reichstag_req
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 5
+		}
+			
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_bavaria = { #integrate bavaria
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               BAV = {
+				exists = yes
+				}
+				PRS = {
+				has_war = no
+				}
+				BAV = {
+				is_puppet_of = PRS
+				}
+        }
+		
+		visible = {
+		has_war = no 
+		BAV = {
+				is_puppet_of = PRS
+		}
+		}
+		days_remove = 90
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+		BAV = {
+				every_unit_leader = {
+					set_nationality = PRS
+					}
+				}
+        annex_country = {
+    	target = BAV
+    	transfer_troops = yes
+		}
+		add_state_core = 52
+		add_state_core = 53
+		add_state_core = 54
+		hidden_effect = {
+				random_list = {
+					98 = {
+        			country_event = { id = prussia.4 days = 0 }
+					hidden_effect = {
+							add_state_core = 52
+							add_state_core = 53
+							add_state_core = 54
+						}
+					}
+    		}
+		}	
+	}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+	PRS_wurt = { #integrate wurtemburg
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               WUR = {
+				exists = yes
+				}
+				PRS = {
+				has_war = no
+				}
+				WUR = {
+				is_puppet_of = PRS
+				}
+        }
+		
+		visible = {
+		has_war = no 
+		WUR = {
+				is_puppet_of = PRS
+		}
+		}
+		days_remove = 90
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			WUR = {
+			every_unit_leader = {
+				set_nationality = PRS
+				}
+			}
+		annex_country = {
+    			target = WUR
+    			transfer_troops = yes
+			}
+			add_state_core = 50
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+
+	PRS_baden = { #integrate baden
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               BAD = {
+				exists = yes
+				}
+				PRS = {
+				has_war = no
+				}
+				BAD = {
+				is_puppet_of = PRS
+				}
+        }
+		
+		visible = {
+		has_war = no 
+		BAD = {
+				is_puppet_of = PRS
+		}
+		}
+		days_remove = 90
+
+		cost = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			BAD = {
+			every_unit_leader = {
+				set_nationality = PRS
+				}
+			}
+		annex_country = {
+    			target = BAD
+    			transfer_troops = yes
+			}
+			add_state_core = 50
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+
+	PRS_westphalia = { #integrate baden
+	icon = generic_political_discourse
+	available = {
+	original_tag = PRS
+		}
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               custom_trigger_tooltip = {
+				   tooltip = PRS_owns_all_WST
+				   28 = {
+						is_owned_and_controlled_by = PRS
+					}
+					42 = {
+						is_owned_and_controlled_by = PRS
+					}
+					51 = {
+						is_owned_and_controlled_by = PRS
+					}
+					55 = {
+						is_owned_and_controlled_by = PRS
+					}
+					56 = {
+						is_owned_and_controlled_by = PRS
+					}
+					57 = {
+						is_owned_and_controlled_by = PRS
+					}
+					848 = {
+						is_owned_and_controlled_by = PRS
+					}
+					850 = {
+						is_owned_and_controlled_by = PRS
+					}
+					851 = {
+						is_owned_and_controlled_by = PRS
+					}
+			   }
+        }
+		
+		visible = {
+		has_war = no 
+			28 = {
+				is_owned_and_controlled_by = PRS
+			}
+			42 = {
+				is_owned_and_controlled_by = PRS
+			}
+			51 = {
+				is_owned_and_controlled_by = PRS
+			}
+			55 = {
+				is_owned_and_controlled_by = PRS
+			}
+			56 = {
+				is_owned_and_controlled_by = PRS
+			}
+			57 = {
+				is_owned_and_controlled_by = PRS
+			}
+			848 = {
+				is_owned_and_controlled_by = PRS
+			}
+			850 = {
+				is_owned_and_controlled_by = PRS
+			}
+			851 = {
+				is_owned_and_controlled_by = PRS
+			}
+		}
+		days_remove = 200
+
+		cost = 100
+
+		fire_only_once = yes
+
+		remove_effect = {
+			28 = {
+				add_core_of = PRS
+				remove_core_of = FRA
+			}
+			42 = {
+				add_core_of = PRS
+				remove_core_of = FRA
+			}
+			51 = {
+				add_core_of = PRS
+				remove_core_of = FRA
+			}
+			55 = {
+				add_core_of = PRS
+				remove_core_of = WST
+			}
+			56 = {
+				add_core_of = PRS
+				remove_core_of = WST
+			}
+			57 = {
+				add_core_of = PRS
+				remove_core_of = WST
+			}
+			848 = {
+				add_core_of = PRS
+				remove_core_of = FRA
+			}
+			850 = {
+				add_core_of = PRS
+				remove_core_of = WST
+			}
+			851 = {
+				add_core_of = PRS
+				remove_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+	
+}
+
+PRS_world_war_two_decisions = {
+	PRS_push_to_the_rhine = {
+	icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               WST = {
+				exists = yes
+				}
+				PRS = {
+				has_war_with = WST
+				}
+			NOT = {
+				PRS = {
+					controls_state = 850
+					controls_state = 55
+				}
+			}
+        }
+
+		days_remove = 100
+
+		cost = 25
+
+		fire_only_once = yes
+
+		modifier = {
+               war_support_factor = 0.1
+			   offensive_war_stability_factor = 0.15
+			   mobilization_speed = 0.15
+			   war_support_weekly = 0.02
+          }
+		targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+		}
+		targeted_modifier = {
+				tag = WST
+				attack_bonus_against = 0.2
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+PRS_instigate_a_rebellion = {
+	icon = generic_ignite_civil_war
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               FRA = {
+				exists = yes
+				}
+				PRS = {
+				has_war_with = FRA
+				}
+			FRA = {
+				controls_state = 51
+				controls_state = 42
+			}
+        }
+
+		days_remove = 15
+
+		cost = 40
+
+		fire_only_once = yes
+
+		complete_effect = {
+			load_oob = "GER_rhenish_rebellion"
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_create_coalition = {
+		icon = generic_nationalism
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               FRA = {
+				exists = yes
+				}
+				PRS = {
+				has_war_with = FRA
+				}
+        }
+
+		days_remove = 1
+
+		cost = 10
+
+		fire_only_once = yes
+
+		complete_effect = {
+			PRS = { create_faction = "8th Coalition" }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	
+	PRS_invite_uk = {
+	icon = generic_nationalism
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               FRA = {
+				exists = yes
+				}
+				PRS = {
+				has_war_with = FRA
+				is_in_faction = yes
+				}
+        }
+
+		days_remove = 10
+
+		cost = 40
+
+		fire_only_once = yes
+
+		remove_effect = {
+			ENG = {
+				country_event = prussia.36
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invite_italy = {
+	icon = generic_nationalism
+		allowed = {
+			original_tag = PRS
+		}
+		available = {
+               FRA = {
+				exists = yes
+				}
+				PRS = {
+				has_war_with = FRA
+				is_in_faction = yes
+				}
+        }
+
+		days_remove = 10
+
+		cost = 40
+
+		fire_only_once = yes
+
+		remove_effect = {
+			ITA = {
+				country_event = prussia.37 
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+GER_investment_decisions = {
+
+	PRS_invest_in_mecklenburg = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            MEK = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 35
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -1500
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 1500 }
+		MEK = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_saxony = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            SAX = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 50
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -2000
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 2000 }
+		SAX = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_hannover = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            HAN = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 75
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -4500
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 4500 }
+		HAN = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_bavaria = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            BAV = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 75
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -4500
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 4500 }
+		BAV = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_wurttemberg = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            WUR = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 50
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -2500
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 2500 }
+		WUR = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_baden = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            BAD = { is_puppet_of = PRS }
+        }	
+		
+		days_remove = 50
+		days_re_enable = 15
+		
+		cost = 35
+		
+		fire_only_once = no 
+		
+		complete_effect = {
+			add_manpower = -1500
+		}
+		
+		remove_effect = {
+		PRS = { add_manpower = 1500 }
+		BAD = { 
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+PRS_research_slot_decisions = {
+	PRS_fund_danzig_research_society = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            num_of_factories > 50
+			check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+			}
+        }	
+		
+		days_remove = 30
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = PRS_reichstag_req
+			add_research_slot = 1
+		}
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	PRS_expand_prussian_academy_of_sciences = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+            num_of_factories > 80
+			check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+			}
+        }	
+		
+		days_remove = 30
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRS_reichstag_req
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+GER_reichstag = {
+	
+	PRS_lobby_reichstag = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+		check_variable = {
+			var = reichstag_support
+			value = 75
+			compare = less_than
+		}
+		}
+	
+		days_remove = 31
+		cost = 50
+		fire_only_once = no 
+		days_re_enable = 75
+	
+		modifier = {
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+			add_to_variable = {
+			var = reichstag_support
+			value = 5
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_give_speech = {
+		icon = GFX_decision_eng_propaganda_campaigns
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+		check_variable = {
+			var = reichstag_support
+			value = 70
+			compare = less_than
+		}
+		}
+	
+		days_remove = 31
+		cost = 75
+		fire_only_once = no 
+		days_re_enable = 180
+	
+		modifier = {
+			political_power_gain = -0.3
+		}
+		remove_effect = {
+			add_to_variable = {
+			var = reichstag_support
+			value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_compromise_opposition = {
+	icon = GFX_decision_hol_exchange_intelligence_data
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 40
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 31
+	cost = 50
+	fire_only_once = no 
+	days_re_enable = 365
+	
+	modifier = {
+			political_power_gain = -0.5
+			stability_weekly = -0.01
+		}
+		remove_effect = {
+			add_to_variable = {
+			var = reichstag_support
+			value = 15
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_pass_pork_barrel_law = {
+	icon = GFX_decision_generic_break_treaty
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 90
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 81
+	cost = 100
+	fire_only_once = no 
+	days_re_enable = 150
+	
+	modifier = {
+			political_power_gain = -0.05
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			add_to_variable = {
+			var = reichstag_support
+			value = 12
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_threaten_pms = {
+	icon = GFX_decision_onmap_recruit_operative
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 90
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 1
+	cost = 75
+	fire_only_once = no 
+	days_re_enable = 365
+	
+		complete_effect = {
+			add_stability = -0.03
+			add_to_variable = {
+			var = reichstag_support
+			value = 15
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_organize_protests = {
+	icon = GFX_decision_generic_political_rally
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 60
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 36
+	cost = 75
+	fire_only_once = no 
+	days_re_enable = 400
+		
+		modifier = {
+		stability_weekly = -0.01
+		}
+	
+		complete_effect = {
+			add_stability = 0.03
+			add_to_variable = {
+			var = reichstag_support
+			value = 25
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_consolidate_power = {
+	icon = GFX_decision_hol_radio_oranje
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 90
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 75
+	cost = 50
+	fire_only_once = no 
+	days_re_enable = 170
+		modifier = {
+		consumer_goods_factor = 0.07
+		}
+		remove_effect = {
+			add_political_power = 125
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_work_with_reichsrat = {
+	icon = GFX_decision_eng_install_government
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 60
+	compare = less_than 
+	}
+	}
+	
+	days_remove = 75
+	cost = 50
+	fire_only_once = no 
+	days_re_enable = 170
+		modifier = {
+		political_power_gain = -0.3
+		}
+		remove_effect = {
+			add_to_variable = {
+			var = reichstag_support
+			value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_military_buildup = {
+	icon = GFX_decision_ger_military_buildup
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 51
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 125
+	cost = 75
+	fire_only_once = no 
+	days_re_enable = 65
+		modifier = {
+		industrial_capacity_factory = 0.2
+		production_speed_arms_factory_factor = 0.1
+		}
+		remove_effect = {
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 10
+			}
+			
+			IF = {
+				limit = { has_war = yes }
+				add_political_power = 50
+			else_if = {
+				limit = { has_war = no }
+				add_political_power = -25
+			}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_purchase_weapons = {
+	icon = GFX_decision_ger_military_buildup
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 51
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 15
+	cost = 50
+	fire_only_once = no 
+	days_re_enable = 150
+		modifier = {
+		war_support_factor = 0.01
+		}
+		remove_effect = {
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 10
+			}
+			add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 3500
+			producer = PRS
+			}
+			add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 800
+			producer = PRS
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+	}
+	
+	PRS_industrial_subsidies = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+		check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+		}
+		}
+	
+		days_remove = 62
+		cost = 75
+		fire_only_once = no 
+		days_re_enable = 180
+	
+		modifier = {
+			political_power_gain = -0.02
+			consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+               limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_invest_in_berlin_roads = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+		check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+		}
+		}
+	
+		days_remove = 70
+		cost = 75
+		fire_only_once = yes 
+		days_re_enable = 180
+	
+		modifier = {
+			political_power_gain = -0.02
+			consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			64 = {
+				add_building_construction = {
+    				type = infrastructure
+   					level = 2
+    				instant_build = yes
+				}
+			}
+			62 = {
+				add_building_construction = {
+    				type = infrastructure
+   					level = 2
+    				instant_build = yes
+				}
+			}
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_economic_stimulus_programs = {
+		icon = generic_construction
+		allowed = {
+			original_tag = PRS 
+		}
+		available = {
+		check_variable = {
+			var = reichstag_support
+			value = 51
+			compare = greater_than_or_equals
+		}
+		}
+	
+		days_remove = 95
+		cost = 95
+		fire_only_once = yes 
+		days_re_enable = 180
+	
+		modifier = {
+			political_power_gain = -0.02
+			consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRS_stimulated
+			add_political_power = 150
+			set_country_flag = PRS_stimulated
+			subtract_from_variable = {
+			var = reichstag_support
+			value = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	PRS_raise_minimum_wage = {
+	icon = generic_political_discourse
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 51
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 40
+	cost = 100
+	fire_only_once = no
+	days_re_enable = 365
+	
+	modifier = {
+			political_power_gain = -0.05
+			consumer_goods_factor = 0.01
+	}
+	remove_effect = {
+		add_political_power = 225
+		add_stability = 0.07
+		add_war_support = 0.1
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 15
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	
+	}
+	
+	PRS_path_to_citizenship = {
+	icon = generic_political_discourse
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 50
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 60
+	cost = 75
+	fire_only_once = yes
+	
+	modifier = {
+			political_power_gain = -0.07
+			consumer_goods_factor = -0.05
+	}
+	remove_effect = {
+		add_political_power = 100
+		add_stability = -0.02
+		add_war_support = 0.05
+		set_country_flag = path_to_citizenship
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 20
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	
+	}
+	
+	PRS_loosen_recruiting = {
+	icon = GFX_decision_eng_blackshirt_march
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 51
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 31
+	cost = 75
+	fire_only_once = no
+	
+	modifier = {
+		experience_gain_army = -0.02
+	}
+	remove_effect = {
+		add_manpower = 100000
+		army_experience = -15
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 15
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	
+	}
+	
+	PRS_constitutional_reform = {
+	icon = GFX_decision_eng_trade_unions_support
+	allowed = {
+	original_tag = PRS 
+	}
+	available = {
+	check_variable = {
+	var = reichstag_support
+	value = 75
+	compare = greater_than_or_equals
+	}
+	}
+	
+	days_remove = 120
+	cost = 200
+	fire_only_once = yes
+	
+	modifier = {
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.1
+			war_support_weekly = -0.05
+			stability_weekly = -0.04
+	}
+	remove_effect = {
+		add_political_power = 100
+		add_stability = 0.15
+		add_war_support = 0.15
+		set_country_flag = constitutional_reform
+		subtract_from_variable = {
+		var = reichstag_support
+		value = 60
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	
+	}
+	
+	
+}

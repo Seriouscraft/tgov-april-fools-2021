@@ -1,0 +1,883 @@
+#Germany
+AUS_coring_decisions = {
+	AUS_core_bavaria = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            BAV = {
+				exists = no
+			}
+			52 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = BAV_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 52
+				state = 53
+				state = 54
+			}
+		} 
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = BAV
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = BAV_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_wurttemberg = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            WUR = {
+				exists = no
+			}
+			50 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = WUR_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			state = 50
+		} 
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = WUR
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = WUR_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_baden = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            BAD = {
+				exists = no
+			}
+			854 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = BAD_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			state = 854
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = BAD
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = BAD_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_saxony = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            SAX = {
+				exists = no
+			}
+			65 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = SAX_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 60
+				state = 65
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = SAX
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = SAX_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_westphalia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            SAX = {
+				exists = no
+			}
+			55 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = WST_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 55
+				state = 56
+				state = 57
+				state = 850
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = WST
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = WST_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_hannover = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            HAN = {
+				exists = no
+			}
+			59 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = HAN_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			state = 59
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = HAN
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = HAN_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_mecklenburg = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            MEK = {
+				exists = no
+			}
+			61 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = MEK_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			state = 61
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = MEK
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = MEK_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_danish_germany = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			58 = {
+				is_owned_and_controlled_by = AUS
+			}
+			856 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = DEN_AUS_cored
+			}
+        }
+
+		highlight_states = {
+			OR = {
+				state = 58
+				state = 856
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			58 = {
+				add_core_of = AUS
+			}
+			856 = {
+				add_core_of = AUS
+			}
+			set_country_flag = DEN_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_prussia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            PRS = {
+				exists = no
+			}
+			64 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = PRS_AUS_cored
+			}
+        }
+
+		highlight_states = {
+			OR = {
+				state = 64
+				state = 814
+				state = 62
+				state = 66
+				state = 68
+				state = 63
+				state = 67
+				state = 86
+				state = 85
+				state = 5
+				state = 763
+				state = 188
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 200
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = PRS
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = PRS_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_french_germany = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			51 = {
+				is_owned_and_controlled_by = AUS
+			}
+			851 = {
+				is_owned_and_controlled_by = AUS
+			}
+			42 = {
+				is_owned_and_controlled_by = AUS
+			}
+			848 = {
+				is_owned_and_controlled_by = AUS
+			}
+			28 = {
+				is_owned_and_controlled_by = AUS
+			}
+			8 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_agermandream
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = FRA_AUS_cored
+			}
+        }
+
+		highlight_states = {
+			OR = {
+				state = 51
+				state = 851
+				state = 42
+				state = 848
+				state = 28
+				state = 8
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 150
+
+		remove_effect = {
+			51 = {
+				add_core_of = AUS
+			}
+			851 = {
+				add_core_of = AUS
+			}
+			42 = {
+				add_core_of = AUS
+			}
+			848 = {
+				add_core_of = AUS
+			}
+			28 = {
+				add_core_of = AUS
+			}
+			8 = {
+				add_core_of = AUS
+			}
+			set_country_flag = FRA_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+#Austrian Empire
+
+AUS_coring_decisions = {
+	AUS_core_hungary = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            HUN = {
+				exists = no
+			}
+			43 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = HUN_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 852
+				state = 155
+				state = 853
+				state = 43
+				state = 841
+				state = 154
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = HUN
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = HUN_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_czechia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            CZE = {
+				exists = no
+			}
+			9 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = CZE_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 69
+				state = 9
+				state = 72
+				state = 74
+				state = 75
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = CZE
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = CZE_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_poland = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			88 = {
+				is_owned_and_controlled_by = AUS
+			}
+			91 = {
+				is_owned_and_controlled_by = AUS
+			}
+			89 = {
+				is_owned_and_controlled_by = AUS
+			}
+			858 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = POL_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 88
+				state = 91
+				state = 89
+				state = 858
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			88 = {
+				add_core_of = AUS
+			}
+			91 = {
+				add_core_of = AUS
+			}
+			89 = {
+				add_core_of = AUS
+			}
+			858 = {
+				add_core_of = AUS
+			}
+			set_country_flag = POL_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_slovakia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            SLO = {
+				exists = no
+			}
+			70 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = SLO_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 70
+				state = 664
+				state = 71
+				state = 73
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = SLO
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = SLO_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_croatia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			103 = {
+				is_owned_and_controlled_by = AUS
+			}
+			163 = {
+				is_owned_and_controlled_by = AUS
+			}
+			104 = {
+				is_owned_and_controlled_by = AUS
+			}
+			109 = {
+				is_owned_and_controlled_by = AUS
+			}
+			45 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = CRO_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 103
+				state = 163
+				state = 104
+				state = 109
+				state = 45
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+				103 = {
+					add_core_of = AUS
+				}
+				163 = {
+					add_core_of = AUS
+				}
+				104 = {
+					add_core_of = AUS
+				}
+				109 = {
+					add_core_of = AUS
+				}
+				45 = {
+					add_core_of = AUS
+				}
+				set_country_flag = CRO_AUS_cored
+			}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	AUS_core_serbia = {
+		available = {
+			original_tag = AUS
+		}
+		allowed = {
+			tag = AUS
+		}
+		available = {
+            SER = {
+				exists = no
+			}
+			107 = {
+				is_owned_and_controlled_by = AUS
+			}
+			has_completed_focus = AUS_legacyofaustria
+        }
+     	visible = {
+     		NOT = {
+				has_country_flag = SER_AUS_cored
+			 }
+        }
+
+		highlight_states = {
+			OR = {
+				state = 105
+				state = 108
+				state = 106
+				state = 839
+				state = 107
+				state = 764
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 75
+
+		remove_effect = {
+			every_owned_state = {
+				limit= {
+					is_core_of = SER
+				}
+				add_core_of = AUS
+			}
+			set_country_flag = SER_AUS_cored
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

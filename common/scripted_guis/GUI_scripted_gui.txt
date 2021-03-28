@@ -1,0 +1,17 @@
+scripted_gui = {
+	tgov_ideology_name_container = {
+		window_name = "tgov_ideology_name_container"
+  
+		context_type = player_context
+		parent_window_token = politics_tab
+  
+		visible = {
+			always = yes
+		}
+  
+		effects = {
+		}
+		triggers = {
+		}
+	}
+ }

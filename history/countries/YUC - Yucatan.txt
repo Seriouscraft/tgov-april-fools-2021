@@ -1,0 +1,51 @@
+﻿capital = 474
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	transport = 1
+}
+
+set_country_flag = can_replace_minister
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = liberal
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberal = 100
+}
+
+create_country_leader = {
+	name = "Adolfo de la Huerta"
+	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
+	picture = "MEX_Adolfo_de_la_Huerta.dds"
+	expire = "1965.1.1"
+	ideology = classical_liberalism
+}
+
+create_corps_commander = {
+	name = "Cándido Aguilar"
+	picture = "MEX_Candido_Aguilar.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,26 @@
+﻿capital = 853
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.9
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.10.14"
+	election_frequency = 24
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Félix Díaz"
+	desc = "POLITICS_FELIX_DIAZ_DESC"
+	picture = "MEX_felix_diaz.dds"
+	expire = "1965.1.1"
+	ideology = military_junta
+}
+
+set_convoys = 20

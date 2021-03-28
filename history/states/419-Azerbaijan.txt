@@ -1,0 +1,22 @@
+
+state={
+	id=419
+	name="STATE_419"
+
+	history={
+		owner = AZR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_claim_by = PER
+		add_core_of = AZR
+	}
+
+	provinces={
+		1636 1822 7604 13120 
+	}
+	manpower=721100
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

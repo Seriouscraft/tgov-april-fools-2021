@@ -1,0 +1,28 @@
+
+state={
+	id=541
+	name="STATE_541"
+
+	history={
+		owner = GEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			4879 3 
+		}
+		add_core_of = GEX
+		add_core_of = NMB
+
+	}
+
+	provinces={
+		2207 4879 7770 13317 
+	}
+	manpower=462000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,90 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GEX = {
+				initiate_native_conflict = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			GEX = {
+				### STABILITY
+				set_variable = {
+					var = GEX_native_stab_factor
+					value = GEX_native_status
+				}
+				divide_variable = {
+					var = GEX_native_stab_factor
+					value = 10
+				}
+				multiply_variable = {
+					var = GEX_native_stab_factor
+					value = -1
+				}
+				### CONSCRIPTION
+				set_variable = {
+					var = GEX_native_conscription_factor
+					value = GEX_native_status
+				}
+				subtract_from_variable = {
+					var = GEX_native_conscription_factor
+					value = 1
+				}
+				divide_variable = {
+					var = GEX_native_conscription_factor
+					value = 10
+				}
+				multiply_variable = {
+					var = GEX_native_conscription_factor
+					value = -1
+				}
+				### POST PROCESSING
+				clamp_variable = {
+					var = GEX_native_stab_factor
+					min = -1
+					max = 0
+				}
+				clamp_variable = {
+					var = GEX_native_conscription_factor
+					min = -0.9
+					max = 0
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = NMB
+					FROM = {
+						OR = {
+							original_tag = GEX
+							original_tag = ENG
+						}
+					}
+				}
+				GEX = {
+					transfer_state = 927
+					country_event = {
+						id = germanexile.13
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = GEX
+					FROM = {
+						OR = {
+							original_tag = NMB
+						}
+					}
+				}
+				NMB = {
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+}

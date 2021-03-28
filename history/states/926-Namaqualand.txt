@@ -1,0 +1,31 @@
+
+state={
+	id=926
+	name="STATE_926"
+
+	history={
+		owner = GEX
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			5154 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			5154 1 
+		}
+		add_core_of = GEX
+		add_core_of = NMB
+
+	}
+
+	provinces={
+		2229 5154 5189 5203 7605 10963 13316 
+	}
+	manpower=144090
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_GEX_monarchy_in_exile"
+		texturefile = "gfx/interface/ideas/GEX/GEX_monarchy_in_exile.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEX_colonial_army"
+		texturefile = "gfx/interface/ideas/GEX/GEX_colonial_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEX_native_tensions"
+		texturefile = "gfx/interface/ideas/GEX/GEX_native_tensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NMB_anti_colonialism"
+		texturefile = "gfx/interface/ideas/GEX/NMB_anti_colonialism.dds"
+	}
+}

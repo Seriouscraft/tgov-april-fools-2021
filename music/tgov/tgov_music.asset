@@ -1,0 +1,123 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "mainthemebattlehymnoftherepublic.ogg"
+	volume = 0.65
+}
+
+# General Peace:
+music = {
+	name = "ussranthem"
+	file = "ussranthem.ogg"
+	volume = 0.65
+}
+music = {
+	name = "chantognion"
+	file = "chantognion.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lavictoireestanous"
+	file = "lavictoireestanous.ogg"
+	volume = 0.65
+}
+music = {
+	name = "chantdepart"
+	file = "chantdepart.ogg"
+	volume = 0.65
+}
+music = {
+	name = "vivatvivatinaeternumfornapoleonscoronation"
+	file = "vivatvivatinaeternumfornapoleonscoronation.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mypierwszabrygada"
+	file = "mypierwszabrygada.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "polishlithuaniancommonwealthsong"
+	file = "polishlithuaniancommonwealthsong.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "marchedelagardeconsulaireamarengo"
+	file = "marchedelagardeconsulaireamarengo.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "fascistitalyanthemgiovenizza"
+	file = "fascistitalyanthemgiovenizza.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ignacydygasmazurekdabrowskiego"
+	file = "ignacydygasmazurekdabrowskiego.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "pourlempereur"
+	file = "pourlempereur.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "edwardsmiglygettinghismarshalsbatonsmusic"
+	file = "edwardsmiglygettinghismarshalsbatonsmusic.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "lamarchefunebredenapoleon"
+	file = "lamarchefunebredenapoleon.ogg"
+	volume = 0.5
+}
+
+music = {
+	name = "weltrepublik"
+	file = "weltrepublik.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "wachtamrhein"
+	file = "wachtamrhein.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "deutschland"
+	file = "deutschland.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "himnonacionalmexicano"
+	file = "himnonacionalmexicano.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "godsavethetsar"
+	file = "godsavethetsar.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "kongchristianstodvedhojenmast"
+	file = "kongchristianstodvedhojenmast.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "dereretyndigtland"
+	file = "dereretyndigtland.ogg"
+	volume = 0.7
+}

@@ -1,0 +1,29 @@
+﻿capital = 476
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.9
+
+set_politics = {
+	ruling_party = social_democratic
+	last_election = "1935.10.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	social_democratic = 10
+	liberal = 60
+	democratic = 10
+	communism = 10
+	fascism = 5
+	neutrality = 5
+}
+
+create_country_leader = {
+	name = "Emiliano Zapata"
+	desc = "POLITICS_EMILIANO_ZAPATA_DESC"
+	picture = "ZAP_Emiliano_Zapata.dds"
+	expire = "1965.1.1"
+	ideology = egalitarianism
+}

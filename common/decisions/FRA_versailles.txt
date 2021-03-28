@@ -1,0 +1,527 @@
+FRA_franco_spannish_war = {
+
+     FRA_guerre_eclair_mission = {
+
+          icon = generic_tank
+
+          allowed = { tag = FRA }
+
+          available = {
+               controls_state = 165
+               controls_state = 912
+               controls_state = 166
+               controls_state = 794
+               controls_state = 172
+               controls_state = 792
+               controls_state = 176
+          }
+
+          activation = {
+               has_war_with = SPR
+          }
+
+          is_good = no
+          days_mission_timeout = 120
+
+          timeout_effect = {
+               hidden_effect = {
+                    SPR = {
+                         country_event = { id = spain.versailles.5 hours = 1 }
+                    }
+               }
+          custom_effect_tooltip = FRA_FSW_Spain_wins
+          }
+
+          complete_effect = {
+               hidden_effect = {
+                    country_event = { id = france.44 hours = 1 }
+               }
+          custom_effect_tooltip = FRA_FSW_France_wins
+          }
+     }
+
+     FRA_harsh_repression_policy = {
+
+          icon = GFX_decision_oppression
+
+          allowed = { tag = FRA }
+
+          cost = 50
+
+          available = {
+               num_occupied_states > 1
+               NOT = {
+                    has_country_flag = FRA_small_scale_pol
+               }
+          }
+
+          fire_only_once = yes
+          days_remove = 60
+
+          modifier = {
+               stability_weekly = -0.03
+               resistance_growth = -0.5
+               weekly_manpower = -3000
+               war_support_weekly = 0.03
+          }
+
+          complete_effect = {
+               set_country_flag = FRA_harsh_pol
+          }
+
+     }
+
+     FRA_small_scale_repression_policy = {
+
+          icon = GFX_decision_oppression
+
+          allowed = { tag = FRA }
+
+          cost = 50
+
+          available = {
+               num_occupied_states > 1
+               NOT = {
+                    has_country_flag = FRA_harsh_pol
+               } 
+          }
+
+          fire_only_once = yes
+          days_remove = 60
+
+          modifier = {
+               stability_weekly = -0.01
+               resistance_growth = -0.25
+               weekly_manpower = -1000
+               war_support_weekly = 0.01
+          }
+
+          complete_effect = {
+               set_country_flag = FRA_small_scale_pol
+          }
+     }
+}
+
+FRA_war_of_8_coalition = {
+
+     FRA_create_the_coalition = {
+
+          icon = GFX_decision_oppression
+
+          allowed = { 
+               OR = {
+                    tag = PRS
+                    tag = ENG
+                    tag = SOV
+                    tag = ITA
+               } 
+          }
+
+          cost = 15
+
+          available = {
+               has_war_with = FRA
+          }
+
+          visible = {
+               has_war_with = FRA
+               NOT = {
+                    any_other_country = {
+                         has_country_flag = NEW_COALITION_FLAG
+                    }
+               }
+          }
+
+          fire_only_once = yes
+
+          complete_effect = {
+               if = {
+                    limit = {
+                         is_faction_leader = yes
+                    }
+                    set_faction_name = 8TH_COALITION_FAC
+                    if = {
+                         limit = {
+                              tag = ENG
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = PRS
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = ITA
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = SOV
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+               }
+              if = {
+                   limit = {
+                        is_in_faction = yes
+                        is_faction_leader = no
+                   }
+                   leave_faction = yes
+                   create_faction = 8TH_COALITION_FAC
+                   if = {
+                         limit = {
+                              tag = ENG
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = PRS
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = ITA
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = SOV
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+              }
+              if = {
+                   limit = {
+                        NOT = {
+                             is_in_faction = yes
+
+                        }
+                   }
+                   create_faction = 8TH_COALITION_FAC
+                   if = {
+                         limit = {
+                              tag = ENG
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = PRS
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = ITA
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+                    if = {
+                         limit = {
+                              tag = SOV
+                         }
+                         set_country_flag = NEW_COALITION_FLAG
+                    }
+              }
+              set_global_flag = WAR_OF_8TH_COAL_FLAG
+              
+          }
+          ai_will_do = {
+			factor = 200
+		}
+     }
+
+     FRA_join_the_coalition = {
+
+          icon = GFX_decision_oppression
+
+          allowed = { 
+               OR = {
+                    tag = PRS
+                    tag = ENG
+                    tag = SOV
+                    tag = ITA
+                    tag = SPR
+                    tag = USA
+               } 
+          }
+
+          cost = 15
+
+          available = {
+               if = {
+                    limit = {
+                         ENG = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    NOT = {
+                         has_war_with = ENG
+                         is_in_faction_with = ENG
+                    }
+               }
+               if = {
+                    limit = {
+                         PRS = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    NOT = {
+                         has_war_with = PRS
+                         is_in_faction_with = PRS
+                    }
+               }
+               if = {
+                    limit = {
+                         ITA = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    NOT = {
+                         has_war_with = ITA
+                         is_in_faction_with = ITA
+                    }
+               }
+               if = {
+                    limit = {
+                         SOV = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    NOT = {
+                         has_war_with = SOV
+                         is_in_faction_with = SOV
+                    }
+               }
+          }
+
+          visible = {
+               has_global_flag = WAR_OF_8TH_COAL_FLAG
+               if = {
+                    limit = {
+                         tag = ENG
+                         has_country_flag = NEW_COALITION_FLAG
+                    }
+                    always = no
+               }
+               if = {
+                    limit = {
+                         tag = PRS
+                         has_country_flag = NEW_COALITION_FLAG
+                    }
+                    always = no
+               }
+               if = {
+                    limit = {
+                         tag = ITA
+                         has_country_flag = NEW_COALITION_FLAG
+                    }
+                    always = no
+               }
+               if = {
+                    limit = {
+                         tag = SOV
+                         has_country_flag = NEW_COALITION_FLAG
+                    }
+                    always = no
+               }
+          }
+
+          complete_effect = {
+               if = {
+                    limit = {
+                         ENG = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    ENG = { add_to_faction = ROOT }
+               }
+               if = {
+                    limit = {
+                         PRS = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    PRS = { add_to_faction = ROOT }
+               }
+               if = {
+                    limit = {
+                         ITA = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    ITA = { add_to_faction = ROOT }
+               }
+               if = {
+                    limit = {
+                         SOV = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    SOV = { add_to_faction = ROOT }
+               }
+          }
+     ai_will_do = {
+			factor = 1
+               modifier = {
+				add = 300
+				tag = ENG
+			}
+               modifier = {
+				add = 300
+				tag = PRS
+			}
+               modifier = {
+				add = 300
+				tag = ITA
+			}
+               modifier = {
+				factor = 0
+				tag = SOV
+			}
+               modifier = {
+				add = 200
+				if = {
+                         limit = {
+                              tag = SOV
+                              OR = {
+                                   has_government = democratic
+                                   has_government = liberal
+                              }
+                         }
+                    }
+			}
+               modifier = {
+				factor = 0
+				tag = SPR
+			}
+               modifier = {
+				add = 200
+				if = {
+                         limit = {
+                              tag = SPR
+                              FRA = {
+                                   owns_state = 165
+                              }
+                         }
+                    }
+			}
+               modifier = {
+				add = 50
+				tag = USA
+			}
+               modifier = {
+				add = 500
+				if = {
+                         limit = {
+                              tag = USA
+                              FRA = {
+                                   has_offensive_war = yes
+                              }
+                         }
+                    }
+			}
+               modifier = {
+				add = 500
+				tag = AUS
+			}
+		}
+     }
+
+     FRA_join_continental_alliance = {
+
+          icon = GFX_decision_oppression
+
+          allowed = { 
+               OR = {
+                    tag = SPR
+                    tag = SOV
+                    tag = USA
+               } 
+          }
+
+          cost = 15
+
+          available = {
+               NOT = {
+                    has_war_with = FRA
+                    is_in_faction_with = FRA
+               }
+          }
+
+          visible = {
+               has_global_flag = WAR_OF_8TH_COAL_FLAG
+               NOT = {
+                    is_in_faction_with = FRA
+               }
+               if = {
+                    limit = {
+                         SOV = {
+                              has_country_flag = NEW_COALITION_FLAG
+                         }
+                    }
+                    always = no
+               }
+          }
+
+          complete_effect = {
+               FRA = {
+                    add_to_faction = ROOT
+               }
+
+          }
+     ai_will_do = {
+			factor = 1
+               modifier = {
+				factor = 0
+				if = {
+                         limit = {
+                              tag = SPR
+                              FRA = {
+                                   owns_state = 165
+                              }
+                         }
+                    }
+			}
+               modifier = {
+				add = 300
+				tag = SPR
+			}
+               modifier = {
+				factor = 0
+				tag = USA
+			}
+               modifier = {
+				add = 500
+				if = {
+                         limit = {
+                              tag = USA
+                              FRA = {
+                                   has_defensive_war = yes
+                              }
+                         }
+                    }
+			}
+               modifier = {
+				factor = 0
+				tag = SOV
+			}
+               modifier = {
+				add = 500
+				if = {
+                         limit = {
+                              tag = SOV
+                              has_government = fascism
+                         }
+                    }
+			}
+		}
+     }
+}

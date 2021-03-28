@@ -1,0 +1,108 @@
+#####Prussia
+
+
+GER_occupation_decisions = {
+
+    allowed = {
+        original_tag = PRS
+    }
+
+    visible = {
+       OR = {
+       		AND = {
+       			FRA = {
+       				exists = no
+       			}
+       			16 = {
+       				is_owned_by = PRS
+       			}
+       		}
+       		AND = {
+       			ITA = {
+       				exists = no
+       			}
+       			2 = {
+       				is_owned_by = PRS
+       			}
+       		}
+       }
+    }
+}
+
+GER_reichstag = {
+
+	icon = generic_political_actions
+	picture = GFX_decision_cat_picture_chi_political_support
+	
+	allowed = {
+		original_tag = PRS 
+	}
+	
+	visible = {
+	original_tag = PRS 
+	}
+}
+
+GER_unification_decisions = {
+
+    allowed = {
+        original_tag = PRS
+    }
+
+    visible = {
+       OR = {
+       		AND = {
+			PRS = { has_completed_focus = GER_dealing_with_mecklenburg }
+       		}
+       		AND = {
+			PRS = { has_completed_focus = GER_win_over_saxony }
+       		}
+			AND = {
+			PRS = { has_completed_focus = GER_the_issue_of_hannover }
+       		}
+       }
+    }
+}
+
+PRS_world_war_two_decisions = {
+	allowed = {
+        original_tag = PRS
+    }
+
+	visible = {
+		OR = {
+			has_war_with = FRA
+			has_war_with = WST
+		}
+	}
+}
+
+GER_investment_decisions = {
+	 allowed = {
+        original_tag = PRS
+    }
+
+    visible = {
+       OR = {
+       		AND = {
+			PRS = { has_completed_focus = GER_dealing_with_mecklenburg }
+       		}
+       		AND = {
+			PRS = { has_completed_focus = GER_win_over_saxony }
+       		}
+			AND = {
+			PRS = { has_completed_focus = GER_the_issue_of_hannover }
+       		}
+       }
+    }
+}
+
+PRS_research_slot_decisions = {
+	allowed = {
+        original_tag = PRS
+    }
+
+	visible = {
+		
+	}
+}

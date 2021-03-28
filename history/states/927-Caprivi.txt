@@ -1,0 +1,29 @@
+
+state={
+	id=927
+	name="STATE_927"
+
+	history={
+		owner = GEX
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			8136 1 
+		}
+		victory_points = {
+			10978 1 
+		}
+		add_core_of = GEX
+		add_core_of = NMB
+
+	}
+
+	provinces={
+		8136 10957 10978 12519 12921 13217 13305 13319 13320 13321 13322 
+	}
+	manpower=356000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

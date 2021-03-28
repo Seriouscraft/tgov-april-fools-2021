@@ -1,0 +1,93 @@
+ideas = {
+
+    #MINISTERS
+
+		head_of_state = {
+			USA_sam_rayburn_hos = {
+
+			picture = USA_minister_sam_rayburn
+			
+			allowed = {
+				original_tag = USA
+			}
+
+			cancel_if_invalid = yes
+
+			available = {
+				has_country_flag = can_replace_minister
+			}
+			
+			traits = {
+				public_infrastructure
+				national_progressive_trait
+				}
+			}
+		}
+
+		econ_minister = {
+			USA_herbert_hoover_eco = {
+
+			picture = USA_minister_herbert_hoover
+			
+			allowed = {
+				original_tag = USA
+			}
+
+			cancel_if_invalid = yes
+
+			available = {
+				has_country_flag = can_replace_minister
+			}
+			
+			traits = {
+				head_of_commerce_department
+				true_democrat_trait
+				}
+			}
+		}
+
+		
+		interior_minister = {
+			USA_ogden_l_mills_int = {
+
+			picture = USA_minister_ogden_l_mills
+			
+			allowed = {
+				original_tag = USA
+			}
+
+			cancel_if_invalid = yes
+
+			available = {
+				has_country_flag = can_replace_minister
+			}
+			
+			traits = {
+				conservative_sideliner
+				true_democrat_trait
+				}
+			}
+		}
+
+		foreign_minister = {
+			USA_henry_l_stimson_for = {
+
+			picture = USA_minister_henry_l_stimson
+			
+			allowed = {
+				original_tag = USA
+			}
+
+			cancel_if_invalid = yes
+
+			available = {
+				has_country_flag = can_replace_minister
+			}
+			
+			traits = {
+				popular_policy_maker
+				true_democrat_trait
+				}
+			}
+		}
+}

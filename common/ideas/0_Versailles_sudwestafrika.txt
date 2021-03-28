@@ -1,0 +1,98 @@
+ideas = {
+	country = {
+		GEX_monarchy_in_exile = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				political_power_gain = 0.25
+				weekly_manpower = 150
+			}
+		}
+		GEX_colonial_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				heat_attrition_factor = -0.5
+				industrial_capacity_factory = 0.1
+				army_org_factor = -0.25
+			}
+		}
+		GEX_british_industrial_influence = {
+
+			picture = eng_guided_by_britain
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.33
+				extra_trade_to_target_factor = 0.8
+			}
+		}
+		GEX_native_strikes = {
+
+			picture = FRA_factory_strikes
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5 
+			}
+		}
+		GEX_native_reparations = {
+
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+			}
+		}
+	}
+}

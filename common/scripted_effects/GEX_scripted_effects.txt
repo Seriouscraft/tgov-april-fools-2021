@@ -1,0 +1,74 @@
+initiate_native_conflict = {
+	random_list = {
+		10 = {
+			country_event = {
+				id = germanexile.2
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.3
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.4
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.5
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.6
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.7
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.8
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.9
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.10
+				days = 100
+				random = 480
+			}
+		}
+		10 = {
+			country_event = {
+				id = germanexile.11
+				days = 100
+				random = 480
+			}
+		}
+	}
+}

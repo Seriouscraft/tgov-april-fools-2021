@@ -1,0 +1,209 @@
+﻿#The Gates of Versailles: A Hearts of Iron IV Mod
+
+#OWNER
+ismand2508
+
+#DEPUTY OWNER
+ThatAussieBastard
+
+#FORMER OWNERS
+Globus
+Seriouscraft
+
+#ADMINISTRATORS
+Globus
+Aegon Targaryen
+Seriouscraft
+Hankyspanky
+
+#DEVELOPERS
+The Fatheland - Lead Writer
+Alonch - Chile, South America
+capbrit1 - United Kingdom, Spain, United States
+smigglethesniper - United Kingdom
+sungross - Prussia
+SirBobbyTheOwl - Southern Arabia, Middle East
+Lavader - Bosnia
+
+#CONTRIBUTORS
+Enclave PepsiMan - United States
+Augenis - Liechtenstein
+SunnySideUp - Georgia
+Algerian Man - Brazil
+Saltybiscuits/ckejo - New South Wales
+thread
+terec
+Cryptox
+
+#WRITING, LORE, AND RESEARCH
+shammar - Middle East, Mongolia
+BlazedSoulofHate - India
+Mar Sharri Babilim - Iraq, Middle East
+thanosaekk - Balkans
+TheKuomintangSemite - China
+ThomasQc - Republic of Canada, United States
+Saul Goodman - Iberia
+Bwill2018 - Caribbean
+Liberty Prime - Writing
+Chessus - Writing
+SoaCrow - Germany
+Wolfgang - Austria
+reddawn89 - United States
+
+#ARTISTS
+Lugash
+CuriousTwit
+scryl
+Cameron
+Jeancar2
+Musvåk
+MrMano
+Mapno
+Lyman
+
+#PLAYTESTERS
+BoB
+Clostermann
+DGNX18
+Herr Masthuhn
+TheWalrusman
+SoaCrow
+
+#FORMER DEVELOPERS
+Shronkistan - Coding
+Lskywalker48 - Coding
+Cofroles - Writing
+Miguel of Transnistria - Artist
+Unkn0wn3ntity - Coding, Artist
+cetesh - Writing
+Thest0n3man - Administrator
+Marshal Thomas - Administrator
+Zepo123 - Coding
+LordGoat10 - Artist
+ProfesorDino - Artist
+KommisarYoshi - Administrator
+cumrade - Coding
+blade runner - Coding
+spectrum - Artist
+a toothbrush - Coding
+Champ - Writing
+MaRkOv - Coding
+Senku - Coding, China
+Skye - Coding
+Applestealer - Lore & Research, East Asia
+Von Manstein - Lore & Research
+DuckyMuk123 - Coding
+Omanisch - Playtesting
+Firework123 - Playtesting
+Deathlinger - Playtesting
+Adolf RJ - Playtesting
+Rudz17 - Spain/Catalonia
+Johann, S Class N7 - Lore & Research
+MutoPlaysHOI - Japan
+Mozzy - Prussia
+
+#PARTNERED MODS
+The Second Sengoku
+Southern Victory - A Hearts of Iron IV Mod
+1938 - A Very British Civil War
+The Faded Neon
+A.E.I.O.U 1886
+Age of Imperialism
+Autumn Begonia
+Aftershocks of the Revolutions
+
+#SPECIAL THANKS TO
+MrKmProductions - The mod was started in his server!
+TrippyHippie - Help with Egyptian research and lore
+NukeGaming - Help with Japanese lore
+Hearts of Iron Modding Coop - Being a good place to help with coding
+
+#LICENSES
+
+Hearts of Iron IV uses the following third party libraries. See the accompanying license files for more details.
+
+Breakpad Copyright (c) 2006 Google Inc., 2001-2004 Unicode, Inc.
+
+Catch2 Copyright (c) 2003 Boost Software License
+
+Chromium Embedded Framework (CEF) Copyright (c) 2015 The Chromium Authors
+
+Curl Copyright (c) 1996 - 2011 Daniel Stenberg, <daniel@haxx.se>
+
+DearImGui is used under The MIT License, Copyright (c) 2014-2019 Omar Cornut
+
+EasyProfiler is used under The MIT License, Copyright (c) 2016-2018 Sergey Yagovtsev, Victor Zarubkin, 2004 Apache License
+
+FreeImage open source image library. See http://freeimage.sourceforge.net for details.
+FreeImage is used under the FIPL license
+
+FreeType Copyright (c) 2006-2014 by David Turner, Robert Wilhelm, and Werner Lemberg
+
+Lua is used under the MIT License, Copyright (c) 1994-2006 Lua.org, PUC-Rio
+
+Luabind Copyright (c) 2003 Daniel Wallin and Arvid Norberg
+
+Ogg Vorbis Copyright (c) 2002, Xiph.org Foundation, 2002-2008 Xiph.org Foundation
+
+PhysFS  Copyright (c) 2001-2017 Ryan C. Gordon and others
+
+Simple DirectMedia Layer Copyright (c) 1997-2016 Sam Lantinga <slouken@libsdl.org>
+
+ZLib Copyright (c) 1995-2004 Jean-loup Gailly and Mark Adler
+
+Boost Copyright (c) 2003 Boost Software License
+
+Thread Building Blocks (TBB) Copyright (c) 2004 Apache
+
+N Lohmann JSON is used under the MIT License, Copyright (c) 2013-2019 Niels Lohmann <http://nlohmann.me>.
+
+Eigen is used under the Mozilla Public License Version 2.0
+
+Enet Copyright (c) 2002 Lee Salzman
+
+bZip2 Copyright (c) 1996-2000 Julian R Seward, 1996-2010 Julian Seward <jseward@bzip.org>
+
+StackWalker Copyright (c) 2005-2009, Jochen Kalmbach
+
+AES-256 Copyright (c) 2007-2009 Ilya O. Levin, http://www.literatecode.com
+
+ConvertUTF Copyright (c) 2001-2004 Unicode, Inc.
+
+CyoDecode Copyright (c) 2004 by Cyotec Systems Limited
+
+MD5 Copyright (c) 1991-2, RSA Data Security, Inc. 
+
+MurmurHash3 was written by Austin Appleby and is placed in the public domain. The author hereby disclaims copyright to this source code
+
+PmurHash was written by Shane Day and is placed in the public domain. The author hereby disclaims copyright to this source code
+
+Precise_fixpoint Copyright (c) 2007-2009 Peter Schregle
+
+The OpenGL Extension Wrangler Library
+Copyright (c) 2002-2008 Milan Ikits <milan ikits[]ieee org>
+Copyright (c) 2002-2008 Marcelo E. Magallon <mmagallo[]debian org>
+Copyright (c) 2002 Lev Povalahev
+
+Mesa 3-D graphics library 7.0 Copyright (c) 1999-2007 Brian Paul
+
+GLEW Copyright (c) 2007 The Khronos Group Inc.
+
+cJSON Copyright (c) 2009 Dave Gamble
+
+IF YOU SEE THIS,THEN YOU ARE AN ABSOLUTE LEGEND!
+NOW YOU'RE GONNA BE SEND BACK TO THE LOADING SCREEN!
+Bazinga
+
+
+
+
+
+
+
+
+
+
+
+
+
+

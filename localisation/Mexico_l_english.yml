@@ -1,0 +1,226 @@
+﻿l_english:
+ MEX_fascism:0 "Mexico"
+ MEX_fascism_DEF:0 "Mexico"
+ MEX_democratic:0 "Mexico"
+ MEX_democratic_DEF:0 "Mexico"
+ MEX_liberal:0 "Mexico"
+ MEX_liberal_DEF:0 "Mexico"
+ MEX_social_democratic:0 "Mexico"
+ MEX_social_democratic_DEF:0 "Mexico"
+ MEX_neutrality:0 "Mexico"
+ MEX_neutrality_DEF:0 "Mexico"
+ MEX_monarchist:0 "Mexico"
+ MEX_monarchist_DEF:0 "Mexico"
+ MEX_communism:0 "Mexico"
+ MEX_communism_DEF:0 "Mexico"
+ MEX_theocracy:0 "Mexico"
+ MEX_theocracy_DEF:0 "Mexico"
+ 
+ MEX_fascism_ADJ:0 "Mexican"
+ MEX_democratic_ADJ:0 "Mexican"
+ MEX_liberal_ADJ:0 "Mexican"
+ MEX_social_democratic_ADJ:0 "Mexican"
+ MEX_neutrality_ADJ:0 "Mexican"
+ MEX_monarchist_ADJ:0 "Mexican"
+ MEX_communism_ADJ:0 "Mexican"
+ MEX_theocracy_ADJ:0 "Mexican"
+
+ MEX_liberal_party:0 "PCP"
+ MEX_liberal_party_long:0 "Partido Constitucional Progresista"
+ MEX_democratic_party:0 "PNR"
+ MEX_democratic_party_long:0 "Partido Nacional Republicano"
+ MEX_social_democratic_party:0 "PLM"
+ MEX_social_democratic_party_long:0 "Partido Laborista Mexicano"
+ MEX_fascism_party:0 "PFM"
+ MEX_fascism_party_long:0 "Partido Fascista Mexicano"
+ MEX_communism_party:0 "PCM"
+ MEX_communism_party_long:0 "Partido Comunista Mexicano"
+ MEX_monarchist_party:0 "-"
+ MEX_monarchist_party_long:0 "-"
+ MEX_theocracy_party:0 "LNDLR"
+ MEX_theocracy_party_long:0 "Liga Nacional Defensora de la Libertad Religiosa"
+
+ ### IDEAS ###
+
+ MEX_constitution_of_1857:0 "Constitution of 1857"
+ MEX_constitution_of_1857_desc:0 "The Federal Constitution of the United Mexican States of 1857 is a liberal constitution made in 1857. It is the constitution which grants the most basic of rights to every mexican: freedom of speech, press, assembly and even the right to bear arms. However where it might be a very liberal constitution, it neglects many social rights like schooling and medical rights. The constitution is against government intervention in trade and the economy, and in general it is for a small government"
+
+ MEX_federal_army_of_mexico:0 "Federal Army of Mexico"
+ MEX_federal_army_of_mexico_desc:0 ""
+
+ MEX_kleptocratic_barons:0 "Kleptocratic Barons"
+ MEX_kleptocratic_barons_desc:0 ""
+
+ MEX_truly_federalized_army:0 "Truly Federalized Army"
+ MEX_truly_federalized_army_desc:0 ""
+
+ MEX_well_maintained_army_idea:0 "A Well Maintained Army"
+ MEX_well_maintained_army_idea_desc:0 ""
+
+ MEX_well_trained_army_idea:0 "A Well Trained Army"
+ MEX_well_trained_army_idea_desc:0 ""
+
+ MEX_well_contained_army_idea:0 "A Well Contained Army"
+ MEX_well_contained_army_idea_desc:0 ""
+
+ MEX_expanded_officer_corps_idea:0 "Expanded Officer Corps"
+ MEX_expanded_officer_corps_idea_desc:0 ""
+
+ MEX_strong_supply_chains_idea:0 "Strong Supply Chains"
+ MEX_strong_supply_chains_idea_desc:0 ""
+
+ MEX_mexican_officer_corps:0 "Mexican Officer Corps"
+ MEX_mexican_officer_corps_desc:0 ""
+
+ MEX_decentralized_army:0 "Decentralized Army"
+ MEX_decentralized_army_desc:0 ""
+
+ MEX_lowered_recruitment_standards:0 "Lowered Recruitment Standards"
+ MEX_lowered_recruitment_standards_desc:0 ""
+
+ MEX_settlers_in_the_officer_corps_idea:0 "Settlers in the Officer Corps"
+ MEX_settlers_in_the_officer_corps_idea_desc:0 ""
+
+ MEX_enlisted_cavalry:0 "Enlisted Cavalry"
+ MEX_enlisted_cavalry_desc:0 ""
+
+ MEX_destandardized_equipment:0 "Destandardized Equipment"
+ MEX_destandardized_equipment_desc:0 ""
+
+ MEX_texas_crash_idea:0 "Texas Crash"
+ MEX_texas_crash_idea_desc:0 ""
+
+ ### MINISTERS ###
+ MEX_jose_maria_pino_suarez_hog:0 "José María Pino Suárez"
+ MEX_adolfo_de_la_huerta_eco:0 "Adolfo de la Huerta"
+ MEX_pascal_orozco_for:0 "Pascual Orozco"
+ MEX_juan_andreu_almazan_int:0 "Juan Andreu Almazán"
+ ### EVENTS ###
+ mexico.1.t:0 "Expansion of the East Texas Oil Field"
+ mexico.1.d:0 "The East Texas Oil Field, a very large oil and gas field in eastern Texas has recently been expanded. The local texan oil barons have made new pipelines and refineries, to pump out even more oil. The oil fields in Texas have produced many new jobs and development in Texas, and the oil of Texas has made Mexico the top oil exporter in the world."
+ mexico.1.z:0 "Good for them"
+
+ mexico.2.t:0 "Standard Oil Increases Production"
+ mexico.2.d:0 "Californian Standard Oil, the oil company that has a monopoly on almost all of the oil in California, has started to increase the oil output of California. Upon hearing that the East Texas Oil Field has been expanded, the board of management decided to increase the output of Californian pumps, to compete with the oil barons of Texas."
+ mexico.2.z:0 "Interesting"
+
+ mexico.3.t:0 "California Against Texas"
+ mexico.3.d:0 "The barons and ranchers in Texas have heard of California increasing their production of oil. As a natural response, they have started pumping out even more of the black gold. For over a century the regions of Texas and California have competed against each other, in almost all areas, economy, military, development and oil. Now it is getting out of hand.\n\nOne of the workers on the pump asked his coworker\n\n'We're pumping out all of this oil, but who do we got to sell it to?'\n\nThey both thought and talked about this, but the conversation went on."
+ mexico.3.z:0 "I don't like where this is going"
+
+ mexico.4.t:0 "Oil Prices and Wages Drop"
+ mexico.4.d:0 "The competition between California and Texas has lead to an over-abundance of oil. Thousand of barrels of oil lay about, with no buyers. This over-abundance has lead to the price of oil dropping in Mexico, with no increasing demand with the increasing production. Because of their inability to sell all of their oil, the oil companies of Texas and California have now decreased the wagers of their workers, to keep the company afloat."
+ mexico.4.z:0 "The workers won't like this"
+
+ mexico.5.t:0 "Crash of Crude Oil Market"
+ mexico.5.d:0 "Since the price of oil dropped in Texas and California, the price drop have reached the global market. First it spread to the United States and their stock markets. From there it went to the United Kingdom and then to France. It has since spread like a wildfire, spreading to the eastern European and Asian markets. Oil is now practically worthless, and countries like Azerbaijan and the Middle East have been struck harshly."
+ mexico.5.z:0 "Oh god"
+
+ mexico.6.t:0 "Strikers in California and Texas"
+ mexico.6.d:0 "Following the disasterous oil crash, the strikers have taken up the red banner. The oil barons and oil corporations have had to decrease the wages to keep their companies afloat, and the workers have not taken kindly to this. All over Texas and California, people are striking in not just the oil sector, but in other sectors too. Texas is suffering the most strikers, followed by California.\n\nWe have to act quickly to end these strikes, otherwise there may be unforseen consequences."
+ mexico.6.z:0 "Let's get to work"
+
+ ### NEWS EVENTS ###
+ news.2.title:0 "Texas Crash"
+ news.2.desc:0 "Mexican stock markets were in a panic today as the country’s two largest oil companies simultaneously filed for bankruptcy. Californian Standard Oil and Texan oil barons had been locked in a bitter struggle for dominance over the international oil market. For years both companies used all available means to reach their goal, including bribery and assassination, but in the end the winner was neither. The price of oil has seen worldwide declines of up to 60%. The impact is not just limited to Mexico though, as oil producing countries around the world are slashing production and trying to sell as many barrels they can before the price drops further. It will take years for the market to stabilize to pre-crash levels, years which the Mexican government might not be able to afford."
+ news.2.a:0 "And now they are going to bankrupt us!"
+ news.2.b:0 "Sell! Sell! Sell!"
+ news.2.c:0 "This wont affect us right?"
+
+ news.3.title:0 "Assassination of Madero"
+ news.3.desc:0 "The streets of Mexico City were rattled by gunshots today as president Franciso I.Madero was shot dead near the Palacio de Lecumberri. A mob attempted to lynch assailant on the spot, but police was able to put him in custody where he now awaits interrogation. Speculation has run wild as to what motivated the killer to end the life of the popular liberal president; some say that he was a radical Jacobin angry with the slow pace of reform, while others point their fingers at the right wing Partido Fascista Mexicano. Fellow liberal José María Pino Suárez has already been sworn in as the new president. Filling the shoes the “Father of Meixco” and solving the ever worsening economic situation will be a herculean task for the new leader, but so far he has shown no signs of backing down."
+ news.3.a:0 "This is not our year"
+ news.3.b:0 "I’ll cancel my trip to Veracruz"
+ news.3.c:0 "Can things get any worse for Mexico?"
+
+ news.4.title:0 "US Plans for Intervention"
+ news.4.desc:0 "The Mexican revolution has taken another turn today as [USA.GetLeader] announced his intentions to occupy the town of Campeche in a recent press conference.  He added that the occupation was meant to protect the assets foreign companies operating in the area and to protect the maritime routes of the Gulf of Mexico. The president’s final remarks were that the occupation was only temporary and that they would leave once stability returned to Mexico. The Mexican government has issued a stern letter of protest over what it calls an invasion, but so far has no plans to actually oppose the U.S. Campeche itself on the other hand is planning a welcoming ceremony of U.S troops, relived at the prospect of American protection from the carnage of the revolution. "
+ news.4.a:0 "Damn those vultures!"
+ news.4.b:0 "Its for their own good"
+ news.4.c:0 "Maybe its just a vacation?"
+
+ news.5.title:0 "The Battle of Campeche"
+ news.5.desc:0 "Residents of Campeche were awakened to the sight of a dozen U.S ships as the long awaited occupation of their town has commenced.The Felicista garrison tasked with Campeche defense simply left the town just hours before U.S forces landed and fortified themselves on the outskirts in order to avoid civilian casulties. To their suprise, the Americans had brought in a battalion of cavalry with them. The sound of hooves charging and sabres rattling scared away most of the Mexicans before the battle even begun. Those who held their ground were mercilessly put down.  In light of these developments, [USA.GetLeader] has now ordered the occupation of the entire Yucatan peninsuela  in order to better defend the town from any future attacks.  Felix Diaz reacted to the news by stating that it is nothing but a thinly wailed plundering of Mexico by the Americans."
+ news.5.a:0 "The cavalry saves the day as always"
+ news.5.b:0 "When all of this is over, we are occupying New Orleans for compensation"
+ news.5.c:0 "We will kick them out after we unify Mexico"
+ news.5.d:0 "The American Eagle looks like more like a vulture"
+
+ news.6.title:0 "The battle for San Jose el Alto"
+ news.6.desc:0 "As the sun rose over Campeche, so did the spectre of war. American ships appeared and after another, heading straight towards Fort San Jose el Alto. The fort’s commander was struck with indecision and locked himself in his room. As panic ensued, a young artillery officer fired a 19th-century cannon without orders, miraculously scoring a direct hit on the USS Drayton and starting a fire on the ship’s deck. The Americans responded in turn by pummelling the fort with every naval gun at their disposal. Once the smoke had cleared they landed in Campeche, already deserted by its defenders. While there were few casualties, news of the Mexican government firing on an American ship spread like wildfire. Posters saying “Remember the Drayton, (as well as the Ship that got in trouble in Mexican Colombia)” are already being plastered across U.S cities, as calls for compensation, or even revenge against Mexico are growing ever louder."
+ news.6.a:0 "Revenge? You attacked us first!"
+ news.6.b:0 "Never forget, never forgive"
+ news.6.c:0 "Does this mean they hate us as well?"
+ news.6.d:0 "Will Mexico live to see the New Year"
+
+ news.7.title:0 "United States occupies Yucatan"
+ news.7.desc:0 "As U.S ships approached Campeche there was an eerie silence. They were not greeted with guns and bayonets but by a group of diplomats and politicians. The town wanted to avoid bloodshed and offered a peaceful surrender of the whole Yucatan peninsula in exchange for economic and military assistance to the Nacionalista faction in the Mexican civil war. The Americans agreed and were handed the keys to the city by the mayor himself. Other factions of the Mexican civil war are calling the Nacionalistas traitors for selling Mexican land, but Juan Andreu Almazán argues that nothing is more patriotic than saving the lives of Mexicans from American aggression. As Mexico continues to fight with speeches and guns, a semblance of peace has been restored to Yucatan. Towns and roads are quiet once more, much to the relief of the locals."
+ news.7.a:0 "A deal with the devil is better than a duel between gentlemen"
+ news.7.b:0 "Why can’t all of Mexico be this civilized?"
+ news.7.c:0 "We will not let this slide!"
+ news.7.d:0 "At least no one died"
+
+ news.8.title:0 "Yucatan guerrilla war"
+ news.8.desc:0 "U.S attempts to capture the Zapatista held city of Campeche have quickly devolved into a guerrilla war. Before getting on their boats, American troops had been told that Zapatistas were especially anti-American and should expect stiff resistance from them the second they landed. What they found instead was a quiet and sleepy town that was half abandoned. Many officers were dumbfounded by the silence, but welcomed it nonetheless. They were in for a rude awakening in the night. Zapatista units launched raids all across the city and managed to inflict dozens of losses on the Americans without even being caught. Some soldiers even reported grenades being thrown from the rear. American soldiers have expanded their occupation zone ever since in an attempt to eliminate the Zapatista threat. When asked about the Yucatan incident, Emiliano Zapata told reporters that every meter of Mexican would be paid for by a gallon of American blood. When he was told that reinforcements to the Campeche garrison have already been sent, Zapata simply smiled and replied 'let them come'."
+ news.8.a:0 "I hope the Americans bring coffins as well"
+ news.8.b:0 "Just wait until we find him and his little gang"
+ news.8.c:0 "They might be our enemy, but they are still patriots"
+ news.8.d:0 "The jungle is speaking Spanish"
+ ### TOOLTIPS ###
+ MEX_strikers_decision_tt:0 "§YThis will unlock decisions to take care of the strikes§!"
+
+ ### FLAGS ###
+
+ FLAG_cali_strikers:0 "Has strikes in California"
+ FLAG_texas_strikers:0 "Has strikes in Texas"
+ MEX_starting_cabinet:0 "Has the starting cabinet"
+
+ ### DECISIONS ###
+ MEX_negotiate_with_strikers:0 "Negotiate with the Strikers"
+ MEX_negotiate_with_strikers_desc:0 "Following the Texas crash of the oil market, the wages have dropped and unemployment has gone up. This has lead to the workers striking against the corporations and the government. \n\n§RWe must deal with this quikcly, if we are to contain it§!"
+ MEX_solving_the_strikes_in_california:0 "Solving the Strikes in California"
+ MEX_solving_the_strikes_in_texas:0 "Solving the Strikes in Texas"
+
+ ### FOCUSES ###
+
+ MEX_the_mexican_army:0 "The Mexican Army"
+ MEX_the_mexican_army_desc:0 ""
+ MEX_maintain_the_federal_army:0 "Maintain the Federal Army"
+ MEX_maintain_the_federal_army_desc:0 ""
+ MEX_a_well_maintained_army:0 "A Well Maintained Army"
+ MEX_a_well_maintained_army_desc:0 ""
+ MEX_a_well_trained_army:0 "A Well Trained Army"
+ MEX_a_well_trained_army_desc:0 ""
+ MEX_a_well_contained_army:0 "A Well Contained Army"
+ MEX_the_army_academy:0 "The Army Academy"
+ MEX_the_army_academy_desc:0 ""
+ MEX_utilize_our_industry:0 "Utilize our Industry"
+ MEX_utilize_our_industry_desc:0 ""
+ MEX_expand_the_officer_corps:0 "Expand the Officer Corps"
+ MEX_expand_the_officer_corps_desc:0 ""
+ MEX_strengthen_the_supply_chain:0 "Strengthen the Supply Chain"
+ MEX_strengthen_the_supply_chain_desc:0 ""
+ MEX_a_mexican_corps:0 "A Mexican Corps"
+ MEX_a_mexican_corps_desc:0 ""
+ MEX_the_standard_mexican_army:0 "The Standard Mexican Army"
+ MEX_the_standard_mexican_army_desc:0 ""
+ MEX_decentralize_the_mexican_army:0 "Decentralize the Mexican Army"
+ MEX_decentralize_the_mexican_army_desc:0 ""
+ MEX_end_conscription:0 "End Conscription"
+ MEX_end_conscription_desc:0 ""
+ MEX_lower_recruitment_standards:0 "Lower Recruitment Standards"
+ MEX_lower_recruitment_standards_desc:0 ""
+ MEX_establish_military_zones:0 "Establish Military Zones"
+ MEX_establish_military_zones_desc:0 ""
+ MEX_utilize_local_equipment:0 "Utilize Local Equipment"
+ MEX_utilize_local_equipment_desc:0 ""
+ MEX_a_mass_army:0 "A Mass Army"
+ MEX_a_mass_army_desc:0 ""
+ MEX_settlers_in_the_officer_corps:0 "Settlers in the Officer Corps"
+ MEX_settlers_in_the_officer_corps_desc:0 ""
+ MEX_enlist_the_cavalry:0 "Enlist the Cavalry"
+ MEX_enlist_the_cavalry_desc:0 ""
+ MEX_destandardize_equipment:0 "Destandardize Equipment"
+ MEX_destandardize_equipment_desc:0 ""
+ MEX_the_new_mexican_army:0 "The New Mexican Army"
+ MEX_the_new_mexican_army_desc:0 ""

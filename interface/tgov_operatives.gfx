@@ -1,0 +1,14 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_FRA_Pierre_Loutrel"
+		texturefile = "gfx/leaders/FRA/FRA_Pierre_Loutrel.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_Abel_Danos"
+		texturefile = "gfx/leaders/FRA/FRA_Abel_Danos.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_Emile_Buisson"
+		texturefile = "gfx/leaders/FRA/FRA_Emile_Buisson.dds"
+	}
+}

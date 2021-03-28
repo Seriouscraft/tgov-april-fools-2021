@@ -1,0 +1,33 @@
+﻿capital = 375
+
+set_research_slots = 2
+
+set_country_flag = can_replace_minister
+
+set_convoys = 45
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.7.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 12
+	communism = 10
+	neutrality = 8
+}
+
+set_stability = 0.8
+
+create_country_leader = {
+	name = "Wilbert Lee O'Daniel"
+	desc = "POLITICS_WILBERT_LEE_O_DANIELS_DESC"
+	picture = "TEX_Wilbert_Lee_O_Daniel.dds"
+	expire = "1965.1.1"
+	ideology = progressive_conservatism
+	traits = {
+		#
+	}
+}

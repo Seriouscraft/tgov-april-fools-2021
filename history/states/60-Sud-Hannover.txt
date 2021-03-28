@@ -1,0 +1,51 @@
+
+state={
+	id=60
+	name="STATE_60"
+	resources={
+		steel=13.000
+		chromium=3.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = SAX
+		victory_points = {
+			6524 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+		9560 = {
+			bunker = 1
+		}
+		6487 = {
+			bunker = 2
+		}
+		425 = {
+			bunker = 2
+		}
+		3561 = {
+			bunker = 4
+		}
+		3500 = {
+			bunker = 4
+		}
+		482 = {
+			bunker = 2
+		}
+		9497 = {
+			bunker = 2
+		}
+		}
+		add_core_of = SAX
+	}
+
+	provinces={
+		425 482 538 3500 3561 6487 6501 6524 6582 9497 9560 
+	}
+	manpower=3005214
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

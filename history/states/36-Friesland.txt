@@ -1,0 +1,47 @@
+
+state={
+	id=36
+	name="STATE_36"
+
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			6336 = {
+				naval_base = 3
+			}
+			6241 = {
+				bunker = 3
+			}
+			9363 = {
+				bunker = 2
+			}
+			9403 = {
+				bunker = 2
+			}
+			9309 = {
+				bunker = 2
+			}
+			11318 = {
+				bunker = 2
+			}
+			6286 = {
+				bunker = 1
+			}
+			9335 = {
+				bunker = 1
+			}
+			6336 = {
+				bunker = 1
+			}
+		}
+	}
+
+	provinces={
+		6241 6286 6336 9309 9335 9363 9403 11318 
+	}
+	manpower=2364000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

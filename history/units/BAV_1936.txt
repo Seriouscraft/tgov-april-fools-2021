@@ -1,0 +1,137 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+
+division= {	
+		name = "1. Bayerische Infanterie Division" 
+		location = 692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "2. Bayerische Infanterie Division" 
+		location = 692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "3. Bayerische Infanterie Division" 
+		location = 11544
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "4. Bayerische Infanterie Division" 
+		location = 11544
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "5. Bayerische Infanterie Division" 
+		location = 13116
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "6. Bayerische Infanterie Division" 
+		location = 3474
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "1.Freiwillige der Germanischen Bruderschaft" 
+		location = 692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+
+division= {	
+		name = "2. Freiwillige der Germanischen Bruderschaft" 
+		location = 11544
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+
+division= {	
+		name = "7. Bayerische Infanterie Division" 
+		location = 11638
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "8. Bayerische Infanterie Division" 
+		location = 11620
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "9. Bayerische Infanterie Division" 
+		location = 9557
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "10. Bayerische Infanterie Division" 
+		location = 6594
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "11. Bayerische Infanterie Division" 
+		location = 9514
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "12. Bayerische Infanterie Division" 
+		location = 3571
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "13. Bayerische Infanterie Division" 
+		location = 9666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAV"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=895
+	name="STATE_895"
+
+	history={
+		owner = NHO
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			12910 10 
+		}
+		add_core_of = NHO
+
+	}
+
+	provinces={
+		1773 2130 2205 2219 4791 5183 5211 5225 7567 8165 8186 8220 10925 10927 12910 12918 12924 12932 13169 13170 13171 13172 13282 13287 
+	}
+	manpower=740214
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

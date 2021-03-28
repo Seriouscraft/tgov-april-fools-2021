@@ -1,0 +1,35 @@
+﻿#############################################
+# Azerbaijan Events - Gates to Versailles Edition#
+#############################################
+
+add_namespace = azerbaijan
+
+country_event = { #Death of Nariman Narimanov
+	id = azerbaijan.1
+	title = azerbaijan.1.t
+	desc = azerbaijan.1.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = { #Form the union now (very few chances for not fucked up France war with this union but still possible by AI)
+		name = azerbaijan.1.a
+			kill_country_leader = yes
+			create_country_leader = {
+			name = "Meshadi Azizbekov"
+			desc = "POLITICS_MESHADI_AZIZBEKOV_DESC"
+			picture = "AZR_Meshadi_Azizbekov.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				}
+			}
+			news_event = {
+    			id = news.1
+    			days = 1
+			}
+		}
+}

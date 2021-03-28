@@ -1,0 +1,23 @@
+state={
+	id=807
+	name="STATE_807"
+	history={
+		owner = AZR
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			1896 15
+		}
+		add_claim_by = PER
+		add_core_of = AZR
+
+	}
+	provinces={
+		1896 2071 4755 4825 4901 10454 12793 12861
+	}
+	manpower=2142000
+	state_category=town
+	buildings_max_level_factor=1.000
+}

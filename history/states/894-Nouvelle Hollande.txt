@@ -1,0 +1,21 @@
+
+state={
+	id=894
+	name="STATE_894"
+
+	history={
+		owner = NHO
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = NHO
+	}
+
+	provinces={
+		2133 2177 2186 5138 7623 8134 10473 12906 12912 12926 13131 13283 13288 13289 
+	}
+	manpower=1362
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

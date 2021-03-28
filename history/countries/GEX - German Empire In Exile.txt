@@ -1,0 +1,74 @@
+﻿capital = 541
+
+oob = "GEX_1936"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	transport = 1
+}
+
+set_country_flag = can_replace_minister
+
+add_ideas = {
+	GEX_monarchy_in_exile
+	GEX_colonial_army
+	GEX_british_industrial_influence
+}
+
+set_variable = { 
+	GEX_native_stab_factor = -0.5
+}
+set_variable = { 
+	GEX_native_conscription_factor = -0.4
+}
+set_variable = {
+    var = GEX_native_status
+    value = 5
+}
+add_dynamic_modifier = { 
+	modifier = GEX_native_unrest 
+}
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1935.2.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 25
+	monarchist = 75
+}
+
+create_country_leader = {
+	name = "Wilhelm II"
+	desc = ""
+	picture = "Portrait_GER_Wilhelm_II.dds"
+	expire = "1938.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}

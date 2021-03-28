@@ -1,0 +1,40 @@
+defined_text = {
+    name = GetNativeUnrestLevel
+    text = {
+        trigger = {
+            check_variable = { GEX_native_status < 0.99 }
+        }
+        localization_key = native_unrest_level_0
+    }
+    text = {
+        trigger = {
+            check_variable = { GEX_native_status > 0.99 }
+            check_variable = { GEX_native_status < 3.99 }
+        }
+        localization_key = native_unrest_level_1
+    }
+    text = {
+        trigger = {
+            check_variable = { GEX_native_status > 3.99 }
+            check_variable = { GEX_native_status < 5.99 }
+        }
+        localization_key = native_unrest_level_2
+    }
+    text = {
+        trigger = {
+            check_variable = { GEX_native_status > 5.99 }
+            check_variable = { GEX_native_status < 8.01 }
+        }
+        localization_key = native_unrest_level_3
+    }
+    text = {
+        trigger = {
+            check_variable = { GEX_native_status > 8.01 }
+            check_variable = { GEX_native_status < 10.01 }
+        }
+        localization_key = native_unrest_level_4
+    }
+	text = {
+		localization_key = native_unrest_level_5
+	}
+}

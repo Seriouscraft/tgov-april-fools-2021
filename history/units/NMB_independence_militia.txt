@@ -1,0 +1,48 @@
+﻿division_template = {
+	name = "Infantry Division"
+
+	division_names_group = NMB_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1st Revolutionary Division" 
+		location = 10978
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "2nd Revolutionary Division" 
+		location = 13319
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "3rd Revolutionary Division" 
+		location = 10957
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "4th Revolutionary Division" 
+		location = 13320
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "5th Revolutionary Division" 
+		location = 8136
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+}

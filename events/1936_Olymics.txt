@@ -1,0 +1,230 @@
+######################################################
+# 1936 Olympics Events - Gates to Versailles Edition #
+######################################################
+
+add_namespace = Olympics1
+
+country_event = { #Afghanistan in the 1936 Olympics
+	id = Olympics1.1
+	title = Olympics1.1.t
+	desc = Olympics1.1.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.1.a
+		add_political_power = 5
+	}
+
+	option = { #Response 2
+		name = Olympics1.1.b
+		add_stability = 0.01
+	}
+}
+
+country_event = { #Poyais in the 1936 Olympics
+	id = Olympics1.2
+	title = Olympics1.2.t
+	desc = Olympics1.2.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.2.a
+		add_political_power = -1
+	}
+}
+
+country_event = { #Mexico in the 1936 Olympics
+	id = Olympics1.3
+	title = Olympics1.3.t
+	desc = Olympics1.3.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.3.a
+		add_political_power = -1
+	}
+}
+
+country_event = { #Brazil (United Kingdom of Portugal, Brazil and the Algarves) in the 1936 Olympics
+	id = Olympics1.4
+	title = Olympics1.4.t
+	desc = Olympics1.4.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.4.a
+		add_political_power = 5
+	}
+
+	option = { #Response 2
+		name = Olympics1.4.b
+		add_stability = -0.01
+	}
+}
+
+country_event = { #NSW in the 1936 Olympics
+	id = Olympics1.5
+	title = Olympics1.5.t
+	desc = Olympics1.5.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.5.a
+		add_political_power = 5
+		add_stability = 0.01
+	}
+}
+
+country_event = { #Switzerland in the 1936 Olympics
+	id = Olympics1.6
+	title = Olympics1.6.t
+	desc = Olympics1.6.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.6.a
+		add_stability = 0.01
+	}
+}
+
+country_event = { #Quebec in the 1936 Olympics
+	id = Olympics1.7
+	title = Olympics1.7.t
+	desc = Olympics1.7.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.7.a
+		add_stability = 0.01
+	}
+
+	option = { #Response 2
+		name = Olympics1.7.b
+		add_stability = -0.01
+	}
+}
+
+country_event = { #Sweden in the 1936 Olympics
+	id = Olympics1.8
+	title = Olympics1.8.t
+	desc = Olympics1.8.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.8.a
+	}
+}
+
+country_event = { #Hannover in the 1936 Olympics
+	id = Olympics1.9
+	title = Olympics1.9.t
+	desc = Olympics1.9.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.9.a
+	}
+}
+
+country_event = { #Baden in the 1936 Olympics
+	id = Olympics1.10
+	title = Olympics1.10.t
+	desc = Olympics1.10.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.10.a
+	}
+}
+
+country_event = { #Mecklenburg in the 1936 Olympics
+	id = Olympics1.11
+	title = Olympics1.11.t
+	desc = Olympics1.11.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.11.a
+	}
+}
+
+country_event = { #Bavaria in the 1936 Olympics
+	id = Olympics1.12
+	title = Olympics1.12.t
+	desc = Olympics1.12.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.12.a
+	}
+}
+
+country_event = { #Saxony in the 1936 Olympics
+	id = Olympics1.13
+	title = Olympics1.13.t
+	desc = Olympics1.13.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.13.a
+	}
+}
+
+country_event = { #Saxony in the 1936 Olympics
+	id = Olympics1.14
+	title = Olympics1.14.t
+	desc = Olympics1.14.d
+#	picture =#
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Response 1
+		name = Olympics1.14.a
+		add_stability = -0.01
+	}
+
+	option = { #Response 2
+		name = Olympics1.14.b
+		add_stability = 0.01
+	}
+}

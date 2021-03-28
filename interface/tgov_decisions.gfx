@@ -1,0 +1,45 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_picture_poland_sejm"
+		texturefile = "gfx/interface/decisions/decision_picture_poland_sejm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_decision_picture_liberate_motherland"
+		texturefile = "gfx/interface/decisions/SOV_decision_picture_liberate_motherland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_generic_castles"
+		texturefile = "gfx/interface/decisions/decision_generic_castles.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_gex_reclaim_the_homeland"
+		texturefile = "gfx/interface/decisions/decision_category_gex_reclaim_the_homeland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_reclaim_german_homelands"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_reclaim_german_homelands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_sov_local_banditry"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_sov_local_banditry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_sov_duma"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_sov_duma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_sov_develop_magnitogorsk"
+		texturefile = "gfx/interface/decisions/decision_cat_sov_develop_magnitogorsk.dds"
+	}
+}

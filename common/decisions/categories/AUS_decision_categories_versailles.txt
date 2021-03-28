@@ -1,0 +1,13 @@
+#####United Kingdom
+
+AUS_coring_decisions = {
+
+    allowed = {
+        original_tag = AUS
+    }
+
+    visible = {
+       always = yes
+       has_government = fascism
+    }
+}

@@ -1,0 +1,86 @@
+
+state={
+	id=59
+	name="STATE_59"
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = HAN
+		victory_points = {
+			3326 5 
+		}
+		victory_points = {
+			6377 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 2
+			6325 = {
+				naval_base = 2
+			}
+			6513 = {
+				bunker = 3
+			}
+			11494 = {
+				bunker = 3
+			}
+			3395 = {
+				bunker = 3
+			}
+			3271 = {
+				bunker = 3
+			}
+			3326 = {
+				bunker = 3
+			}
+			474 = {
+				bunker = 2
+			}
+			6377 = {
+				bunker = 4
+			}
+			6325 = {
+				bunker = 1
+			}
+			6298 = {
+				bunker = 2
+			}
+			9264 = {
+				bunker = 2
+			}
+			9238 = {
+				bunker = 2
+			}
+			11359 = {
+				bunker = 2
+			}
+			474 = {
+				bunker = 2
+			}
+			3522 = {
+				bunker = 3
+			}
+			11468 = {
+				bunker = 1
+			}
+			11402 = {
+				bunker = 1
+			}
+			526 = {
+				bunker = 1
+			}
+		}
+		add_core_of = HAN
+	}
+
+	provinces={
+		374 526 3271 3326 3395 3522 6218 6263 6298 6325 6349 6377 6513 9238 9264 9375 11359 11402 11468 11493 
+	}
+	manpower=2438286
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}
